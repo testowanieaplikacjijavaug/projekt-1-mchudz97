@@ -14,7 +14,7 @@ public class Grade {
 
     public static final Grade of(float val){
 
-        if(!isCorrect(val)){
+        if(!isValid(val)){
 
             throw new IllegalArgumentException("SchoolSystem.Grade value is out of range.");
 
@@ -31,7 +31,7 @@ public class Grade {
 
     }
 
-    private static boolean isCorrect(float val){
+    private static boolean isValid(float val){
 
         for(int i=0; i<AVAILABLE_GRADES.length; i++){
 
@@ -43,6 +43,18 @@ public class Grade {
 
         return false;
     }
+
+    public void correctGradeTo(float val){
+
+        if(!isValid(val)){
+            throw new IllegalArgumentException("SchoolSystem.Grade value is out of range.");
+        }
+
+        dateWhenCorrected = new Date(System.currentTimeMillis());
+        correctedGrade = val;
+
+    }
+
 
 
 }

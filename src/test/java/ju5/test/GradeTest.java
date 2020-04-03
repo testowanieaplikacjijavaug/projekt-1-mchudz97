@@ -24,12 +24,13 @@ public class GradeTest {
 
     }
 
+    @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
+    @DisplayName("SchoolSystem.Grade class correctGrade method test if invalid value")
+    @CsvSource({"0", "10", "-3", "1", "2.25", "5.5"})
+    public void correctGradeMethodTestException(String val){
 
-    @Test
-    @DisplayName("Current grade getter test")
-    public void getCurrGradeTest(){
-
-        Assertions.assertEquals(5.0, Grade.of(5).getCurrGrade());
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> SchoolSystem.Grade.of(3).correctGradeTo(Float.parseFloat(val)));
 
     }
 
