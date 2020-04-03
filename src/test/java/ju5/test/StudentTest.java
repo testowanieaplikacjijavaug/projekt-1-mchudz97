@@ -115,7 +115,7 @@ public class StudentTest {
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
     @DisplayName("SchoolSystem.Student changeIndex method test if invalid name")
     @CsvSource({"33333","3333333", "333a33", "''", "AAAAAA", "null"})
-    public void studentChangePernameException(String val){
+    public void studentChangeIndexException(String val){
 
         Student st = new Student("Adam", "Beks", "111111");
 

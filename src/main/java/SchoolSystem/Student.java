@@ -34,13 +34,26 @@ public class Student {
 
         if(!pername.matches("[A-Z][a-z]{1,16}")){
 
-            throw new IllegalArgumentException("Wrong name!");
+            throw new IllegalArgumentException("Wrong pername!");
 
         }
 
         this.pername = pername;
 
     }
+
+    public void changeIndex(String index){
+
+        if(!index.matches("[0-9]{6}")){
+
+            throw new IllegalArgumentException("Wrong index!");
+
+        }
+
+        this.index = index;
+
+    }
+
 
     public String getName(){
 
