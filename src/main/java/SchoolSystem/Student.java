@@ -17,6 +17,19 @@ public class Student {
 
     }
 
+
+    public void rename(String name){
+
+        if(!name.matches("[A-Z][a-z]{1,16}")){
+
+            throw new IllegalArgumentException("Wrong name!");
+
+        }
+
+        this.name = name;
+
+    }
+
     public String getName(){
 
         return this.name;
