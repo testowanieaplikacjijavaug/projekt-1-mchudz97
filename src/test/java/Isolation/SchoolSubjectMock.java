@@ -17,6 +17,7 @@ public class SchoolSubjectMock implements ISchoolSubject {
 
         this.subject = subject;
 
+
     }
 
     @Override
@@ -42,6 +43,16 @@ public class SchoolSubjectMock implements ISchoolSubject {
     @Override
     public void editGrade(Student student, int gradeIndex, float correctedGrade) {
 
+    }
+
+    @Override
+    public String getName() {
+        return this.subject.name();
+    }
+
+    @Override
+    public void setName(SchoolSubjectEnum name) {
+        this.subject = name;
     }
 
 

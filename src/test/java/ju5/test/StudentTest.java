@@ -184,6 +184,21 @@ public class StudentTest {
 
     }
 
+    @Test
+    @DisplayName("SchoolSystem.Student editSubject method test")
+    public void studentEditSubjectTest(){
+
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Student st = new Student("Adam", "Beks", "111111");
+        st.addSubject(ssm);
+        st.editSubject(SchoolSubjectEnum.Wychowanie_fizyczne);
+
+        Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne, ssm.getName());
+
+
+
+    }
+
 
 
 

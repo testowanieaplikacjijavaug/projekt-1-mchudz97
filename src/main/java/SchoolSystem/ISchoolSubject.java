@@ -12,4 +12,6 @@ public interface ISchoolSubject {
 
     public void editGrade(Student student, int gradeIndex, float correctedGrade);
 
+    public String getName();
+    public void setName(SchoolSubjectEnum name);
 }
