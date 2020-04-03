@@ -32,7 +32,16 @@ public class Student {
 
     }
 
+    public void editStudentNote(int noteIndex, String description){
 
+        if(noteIndex < 0 || noteIndex >= this.notes.size()){
+            throw new IllegalArgumentException("Wrong note index!");
+        }
+
+        this.notes.get(noteIndex).editNote(description);
+
+
+    }
 
 
     public void changeName(String name){
