@@ -23,7 +23,7 @@ public class NoteMock implements INote {
 
     @Override
     public String readNote() {
-        return description +" " + fakeDate.toString();
+        return description +" " + parser.format(this.fakeDate);
     }
 
     @Override

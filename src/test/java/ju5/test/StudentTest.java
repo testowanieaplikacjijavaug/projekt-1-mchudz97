@@ -144,7 +144,7 @@ public class StudentTest {
         st.addStudentNote(nm);
 
 
-        Assertions.assertEquals("byl niegrzeczny! Mon Jan 11 00:10:00 CET 2010", st.notes.get(0).readNote());
+        Assertions.assertEquals("byl niegrzeczny! 11-10-2010", st.notes.get(0).readNote());
 
     }
 
@@ -156,7 +156,7 @@ public class StudentTest {
         st.addStudentNote(nm);
         st.editStudentNote(0, "jednak byl grzeczny!");
 
-        Assertions.assertEquals("jednak byl grzeczny! Mon Jan 11 00:10:00 CET 2010", st.notes.get(0).readNote());
+        Assertions.assertEquals("jednak byl grzeczny! 11-10-2010", st.notes.get(0).readNote());
 
 
 
