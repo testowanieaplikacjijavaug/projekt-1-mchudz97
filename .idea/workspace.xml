@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Grade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/GradeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,14 +92,30 @@
       <option name="project" value="LOCAL" />
       <updated>1585916053381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="corrected grade val test+method">
+      <created>1585918310077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585918310077</updated>
+    </task>
+    <task id="LOCAL-00006" summary="corrected grade val test+method">
+      <created>1585918821120</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585918821120</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="of method test" />
     <MESSAGE value="of method added" />
     <MESSAGE value="grade val getter test" />
-    <option name="LAST_COMMIT_MESSAGE" value="grade val getter test" />
+    <MESSAGE value="corrected grade val test+method" />
+    <MESSAGE value="current grade method test" />
+    <option name="LAST_COMMIT_MESSAGE" value="current grade method test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585915524838">
@@ -111,10 +126,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585916052506">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585918851484">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585916052506" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585918851484" />
     <state width="1864" height="258" key="GridCell.Tab.0.bottom" timestamp="1585915565298">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

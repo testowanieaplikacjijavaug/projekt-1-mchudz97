@@ -34,8 +34,21 @@ public class GradeTest {
 
     }
 
+    @Test
+    public void getCurrentGradeMethodTest1(){
 
+        Assertions.assertEquals(3.0f, Grade.of(3.0f).getCurrentGrade());
 
+    }
+
+    @Test
+    public void getCurrentGradeMethodTest2(){
+
+        Grade gr = Grade.of(3.0f);
+        gr.correctGradeTo(3.5f);
+        Assertions.assertEquals(3.5f, gr.getCurrentGrade());
+
+    }
 
 
 
