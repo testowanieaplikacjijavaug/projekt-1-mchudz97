@@ -179,7 +179,7 @@ public class StudentTest {
         Student st = new Student("Adam", "Beks", "111111");
         st.addSubject(ssm);
 
-        Assertions.assertEquals(ssm, st.subjects.get(ssm));
+        Assertions.assertTrue(st.subjects.containsKey(ssm));
 
 
     }
