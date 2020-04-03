@@ -56,5 +56,16 @@ public class Grade {
     }
 
 
+    public float getCurrentGrade(){
+
+        if(this.correctedGrade != 0){
+
+            return this.correctedGrade;
+
+        }
+
+        return grade;
+
+    }
 
 }
