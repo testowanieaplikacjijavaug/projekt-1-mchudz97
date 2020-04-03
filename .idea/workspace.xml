@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="93" />
+    <option name="myElementSize" value="81" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -189,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585939402884</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Student rename method added">
+      <created>1585940775000</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585940775000</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Student refactored method name">
+      <created>1585940930307</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585940930307</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,7 +218,9 @@
     <MESSAGE value="Student constructor test, enum &amp; interface added" />
     <MESSAGE value="Student constructor added" />
     <MESSAGE value="Student rename tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student rename tests" />
+    <MESSAGE value="Student rename method added" />
+    <MESSAGE value="Student refactored method name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student refactored method name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585937159991">
@@ -224,10 +239,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585940774176">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585940929515">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585940774176" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585940929515" />
     <state width="1393" height="41" key="GridCell.Tab.0.bottom" timestamp="1585940738248">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
