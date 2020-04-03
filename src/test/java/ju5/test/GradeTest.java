@@ -25,7 +25,13 @@ public class GradeTest {
     }
 
 
+    @Test
+    @DisplayName("Current grade getter test")
+    public void getCurrGradeTest(){
 
+        Assertions.assertEquals(5.0, Grade.of(5).getCurrGrade());
+
+    }
 
 
 
