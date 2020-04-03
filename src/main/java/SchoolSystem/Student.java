@@ -1,10 +1,15 @@
 package SchoolSystem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
 
     private String name;
     private String pername;
     private String index;
+
+    public List<INote> notes;
 
     public Student(String name, String pername, String index){
 
@@ -14,8 +19,14 @@ public class Student {
             throw new IllegalArgumentException("There is some wrong data!");
 
         }
+        this.name = name;
+        this.index = index;
+        this.pername = pername;
+        this.notes = new ArrayList<INote>(0);
 
     }
+
+
 
 
     public void changeName(String name){

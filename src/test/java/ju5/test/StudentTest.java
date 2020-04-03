@@ -1,11 +1,14 @@
 package ju5.test;
 
+import Isolation.NoteMock;
 import SchoolSystem.Grade;
 import SchoolSystem.MySchoolSystem;
 import SchoolSystem.Student;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+import java.text.ParseException;
 
 public class StudentTest {
 
@@ -132,6 +135,26 @@ public class StudentTest {
 
         Assertions.assertEquals("300003", st.getIndex());
     }
+
+    @Test
+    @DisplayName("SchoolSystem.Student addStudentNoteMethod")
+    public void studentReadNoteTest() throws ParseException {
+        Student st = new Student("Adam", "Beks", "111111");
+        NoteMock nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
+        st.addStudentNote(nm);
+
+
+        Assertions.assertEquals("byl niegrzeczny! Mon Jan 11 00:10:00 CET 2010", st.notes.get(0).readNote());
+
+    }
+
+
+
+
+
+
+
+
 
 
 }
