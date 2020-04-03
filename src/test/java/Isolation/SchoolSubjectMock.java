@@ -1,6 +1,24 @@
-package SchoolSystem;
+package Isolation;
 
-public class SchoolSubject implements ISchoolSubject {
+import SchoolSystem.Grade;
+import SchoolSystem.ISchoolSubject;
+import SchoolSystem.SchoolSubjectEnum;
+import SchoolSystem.Student;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SchoolSubjectMock implements ISchoolSubject {
+
+    SchoolSubjectEnum subject;
+    List<Student> students;
+
+    public SchoolSubjectMock(SchoolSubjectEnum subject){
+
+        this.subject = subject;
+
+    }
+
     @Override
     public Student getStudentByIndex(String index) {
         return null;

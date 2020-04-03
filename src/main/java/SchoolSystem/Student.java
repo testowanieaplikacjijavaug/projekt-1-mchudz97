@@ -1,6 +1,7 @@
 package SchoolSystem;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Student {
@@ -10,6 +11,7 @@ public class Student {
     private String index;
 
     public List<INote> notes;
+    public HashMap<ISchoolSubject, ArrayList<Grade>> subjects;
 
     public Student(String name, String pername, String index){
 
@@ -23,6 +25,7 @@ public class Student {
         this.index = index;
         this.pername = pername;
         this.notes = new ArrayList<INote>(0);
+        this.subjects = new HashMap<ISchoolSubject, ArrayList<Grade>>(0);
 
     }
 

@@ -1,9 +1,8 @@
 package ju5.test;
 
 import Isolation.NoteMock;
-import SchoolSystem.Grade;
-import SchoolSystem.MySchoolSystem;
-import SchoolSystem.Student;
+import Isolation.SchoolSubjectMock;
+import SchoolSystem.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -172,7 +171,18 @@ public class StudentTest {
 
     }
 
+    @Test
+    @DisplayName("SchoolSystem.Student addSubject method test")
+    public void studentAddSubjectTest(){
 
+        ISchoolSubject ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Student st = new Student("Adam", "Beks", "111111");
+        st.addSubject(ssm);
+
+        Assertions.assertEquals(ssm, st.subjects.get(ssm));
+
+
+    }
 
 
 
