@@ -28,6 +28,6 @@ public class NoteMock implements INote {
 
     @Override
     public void editNote(String description) {
-
+        this.description = description;
     }
 }

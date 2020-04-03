@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/INote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585941715539</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Student addStudentNote test with mock">
+      <created>1585945499365</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585945499365</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Student addStudentNote method added">
+      <created>1585945527460</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585945527460</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -257,7 +268,9 @@
     <MESSAGE value="Student changePername method added" />
     <MESSAGE value="Student changeIndex test" />
     <MESSAGE value="Student changeIndex method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student changeIndex method added" />
+    <MESSAGE value="Student addStudentNote test with mock" />
+    <MESSAGE value="Student addStudentNote method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student addStudentNote method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -276,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585945498384">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585945526696">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585945498384" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585945526696" />
     <state width="1393" height="184" key="GridCell.Tab.0.bottom" timestamp="1585945428826">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

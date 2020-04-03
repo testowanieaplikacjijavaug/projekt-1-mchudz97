@@ -148,7 +148,19 @@ public class StudentTest {
 
     }
 
+    @Test
+    @DisplayName("SchoolSystem.Student addStudentNoteMethod")
+    public void studentEditNoteTest() throws ParseException {
+        Student st = new Student("Adam", "Beks", "111111");
+        NoteMock nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
+        st.addStudentNote(nm);
+        st.editNote(nm, "jednak byl grzeczny!");
 
+        Assertions.assertEquals("jednak byl grzeczny! Mon Jan 11 00:10:00 CET 2010", st.notes.get(0).readNote());
+
+
+
+    }
 
 
 
