@@ -12,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="91" />
+    <option name="myElementSize" value="93" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,6 +43,7 @@
   <component name="RunManager" selected="JUnit.StudentTest">
     <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ju5.test.*" />
@@ -51,7 +52,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="ju5.test" />
       <option name="MAIN_CLASS_NAME" value="ju5.test.GradeTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585933422302</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Student constructor added">
+      <created>1585936472085</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585936472085</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -187,13 +197,14 @@
     <MESSAGE value="codecov token added" />
     <MESSAGE value="README.md with badges added" />
     <MESSAGE value="Student constructor test, enum &amp; interface added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student constructor test, enum &amp; interface added" />
+    <MESSAGE value="Student constructor added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student constructor added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="102" key="#GradeTest" timestamp="1585915524838">
+    <state x="482" y="102" key="#GradeTest" timestamp="1585937159991">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="482" y="102" key="#GradeTest/0.0.1920.1030@0.0.1920.1030" timestamp="1585915524838" />
+    <state x="482" y="102" key="#GradeTest/0.0.1920.1030@0.0.1920.1030" timestamp="1585937159991" />
     <state x="623" y="207" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585931472695">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -206,28 +217,31 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585933420166">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585936471158">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585933420166" />
-    <state width="1393" height="542" key="GridCell.Tab.0.bottom" timestamp="1585936241394">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585936471158" />
+    <state width="1393" height="41" key="GridCell.Tab.0.bottom" timestamp="1585937139249">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1393" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
-    <state width="1393" height="542" key="GridCell.Tab.0.center" timestamp="1585936241394">
+    <state width="1393" height="41" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1585937139249" />
+    <state width="1393" height="41" key="GridCell.Tab.0.center" timestamp="1585937139248">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1393" height="542" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
-    <state width="1393" height="542" key="GridCell.Tab.0.left" timestamp="1585936241394">
+    <state width="1393" height="41" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1585937139248" />
+    <state width="1393" height="41" key="GridCell.Tab.0.left" timestamp="1585937139248">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1393" height="542" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
-    <state width="1393" height="542" key="GridCell.Tab.0.right" timestamp="1585936241394">
+    <state width="1393" height="41" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1585937139248" />
+    <state width="1393" height="41" key="GridCell.Tab.0.right" timestamp="1585937139249">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1393" height="542" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
+    <state width="1393" height="41" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1585937139249" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/School$StudentTest.ic" NAME="StudentTest Coverage Results" MODIFIED="1585937139034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ju5.test.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/School$GradeTest.ic" NAME="GradeTest Coverage Results" MODIFIED="1585919027745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ju5.test.*</FILTER>
     </SUITE>

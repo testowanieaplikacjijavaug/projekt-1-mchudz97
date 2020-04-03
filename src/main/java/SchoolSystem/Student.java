@@ -15,8 +15,23 @@ public class Student {
 
         }
 
+    }
 
+    public String getName(){
 
+        return this.name;
+
+    }
+
+    public String getPername(){
+
+        return this.pername;
+
+    }
+
+    public String getIndex(){
+
+        return this.index;
 
     }
 

@@ -70,6 +70,26 @@ public class StudentTest {
     }
 
 
+    @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
+    @DisplayName("SchoolSystem.Student rename method test if invalid name")
+    @CsvSource({"A","AA", "aa", "Ma0", "''", "null"})
+    public void studentRenameTestException(String val){
+
+        Student st = new Student("Adam", "Beks", "111111");
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.rename(nullConventer(val)));
+
+    }
+
+    @Test
+    @DisplayName("SchoolSystem.Student rename method test if valid name")
+    public void studentRenameTest(){
+        Student st = new Student("Adam", "Beks", "111111");
+        st.rename("Janusz");
+
+        Assertions.assertEquals("Janusz", st.getName());
+    }
 
 
 }
