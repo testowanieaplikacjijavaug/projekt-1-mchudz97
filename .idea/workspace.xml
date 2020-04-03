@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/ISchoolSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubjectEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -132,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585922060020</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="README.md with badges added">
+      <created>1585922261052</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585922261052</updated>
+    </task>
+    <task id="LOCAL-00011" summary="README.md with badges added">
+      <created>1585922348903</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585922348903</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -144,21 +166,30 @@
     <MESSAGE value="current grade method test" />
     <MESSAGE value=".travis.yml added" />
     <MESSAGE value="codecov token added" />
-    <option name="LAST_COMMIT_MESSAGE" value="codecov token added" />
+    <MESSAGE value="README.md with badges added" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md with badges added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585915524838">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="482" y="102" key="#GradeTest/0.0.1920.1030@0.0.1920.1030" timestamp="1585915524838" />
+    <state x="623" y="207" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585931472695">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="623" y="207" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1585931472695" />
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1585930386483">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030@0.0.1920.1030" timestamp="1585930386483" />
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585908150172">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585922259613">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585922348181">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585922259613" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585922348181" />
     <state width="1864" height="258" key="GridCell.Tab.0.bottom" timestamp="1585919027771">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
