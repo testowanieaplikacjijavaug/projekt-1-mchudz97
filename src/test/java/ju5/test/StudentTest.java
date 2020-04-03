@@ -191,7 +191,7 @@ public class StudentTest {
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Student st = new Student("Adam", "Beks", "111111");
         st.addSubject(ssm);
-        st.editSubject(SchoolSubjectEnum.Wychowanie_fizyczne);
+        st.editSubject(ssm, SchoolSubjectEnum.Wychowanie_fizyczne);
 
         Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne, ssm.getName());
 
