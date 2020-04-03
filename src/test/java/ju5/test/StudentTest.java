@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 public class StudentTest {
 
-    public Student studentTest
+//    public Student studentTest
 
 
 
