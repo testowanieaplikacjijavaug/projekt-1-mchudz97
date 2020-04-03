@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/ISchoolSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubjectEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StudentTest">
     <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
@@ -60,8 +56,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ju5.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ju5.test" />
+      <option name="MAIN_CLASS_NAME" value="ju5.test.StudentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="JUnit.GradeTest" />
       </list>
     </recent_temporary>
@@ -154,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585922348903</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Student constructor test, enum &amp; interface added">
+      <created>1585933422302</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585933422302</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,7 +186,8 @@
     <MESSAGE value=".travis.yml added" />
     <MESSAGE value="codecov token added" />
     <MESSAGE value="README.md with badges added" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md with badges added" />
+    <MESSAGE value="Student constructor test, enum &amp; interface added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student constructor test, enum &amp; interface added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585915524838">
@@ -186,26 +206,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585922348181">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585933420166">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585922348181" />
-    <state width="1864" height="258" key="GridCell.Tab.0.bottom" timestamp="1585919027771">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585933420166" />
+    <state width="1393" height="542" key="GridCell.Tab.0.bottom" timestamp="1585936241394">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1585919027771" />
-    <state width="1864" height="258" key="GridCell.Tab.0.center" timestamp="1585919027771">
+    <state width="1393" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
+    <state width="1393" height="542" key="GridCell.Tab.0.center" timestamp="1585936241394">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="258" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1585919027771" />
-    <state width="1864" height="258" key="GridCell.Tab.0.left" timestamp="1585919027771">
+    <state width="1393" height="542" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
+    <state width="1393" height="542" key="GridCell.Tab.0.left" timestamp="1585936241394">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="258" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1585919027771" />
-    <state width="1864" height="258" key="GridCell.Tab.0.right" timestamp="1585919027771">
+    <state width="1393" height="542" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
+    <state width="1393" height="542" key="GridCell.Tab.0.right" timestamp="1585936241394">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="258" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1585919027771" />
+    <state width="1393" height="542" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1585936241394" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/School$GradeTest.ic" NAME="GradeTest Coverage Results" MODIFIED="1585919027745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
