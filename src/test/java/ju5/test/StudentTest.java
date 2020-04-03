@@ -92,7 +92,7 @@ public class StudentTest {
     }
 
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
-    @DisplayName("SchoolSystem.Student pername method test if invalid name")
+    @DisplayName("SchoolSystem.Student changePername method test if invalid name")
     @CsvSource({"A","AA", "aa", "Ma0", "''", "null"})
     public void studentChangePernameException(String val){
 
@@ -104,7 +104,7 @@ public class StudentTest {
     }
 
     @Test
-    @DisplayName("SchoolSystem.Student changeName method test if valid name")
+    @DisplayName("SchoolSystem.Student changePername method test if valid name")
     public void studentChangePernameTest(){
         Student st = new Student("Adam", "Beks", "111111");
         st.changePername("Nowak");
@@ -112,7 +112,26 @@ public class StudentTest {
         Assertions.assertEquals("Nowak", st.getPername());
     }
 
+    @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
+    @DisplayName("SchoolSystem.Student changeIndex method test if invalid name")
+    @CsvSource({"33333","3333333", "333a33", "''", "AAAAAA", "null"})
+    public void studentChangePernameException(String val){
 
+        Student st = new Student("Adam", "Beks", "111111");
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.changeIndex(nullConventer(val)));
+
+    }
+
+    @Test
+    @DisplayName("SchoolSystem.Student changeIndex method test if valid name")
+    public void studentChangeIndexTest(){
+        Student st = new Student("Adam", "Beks", "111111");
+        st.changeIndex("300003");
+
+        Assertions.assertEquals("300003", st.getIndex());
+    }
 
 
 }
