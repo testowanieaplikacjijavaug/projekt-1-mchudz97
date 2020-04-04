@@ -16,7 +16,17 @@ public class MySchoolSystem {
 
     }
 
-    public float
+    public float avgOfStudentSubject(Student st, ISchoolSubject subject){
+
+        if(!this.students.contains(st)){
+
+            throw new IllegalArgumentException("that student doesnt exist in system");
+
+        }
+
+        return st.averageGradeOf(subject);
+
+    }
 
     public void editStudentsNote(Student st, INote note, String description){
 

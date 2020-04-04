@@ -46,7 +46,7 @@
       <recent name="C:\Users\mchud\GIT JAVA TESTS\School\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentTest.studentAverageGradeOfAll">
+  <component name="RunManager" selected="JUnit.SchoolSystemTest">
     <configuration name="SchoolSubjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
@@ -126,10 +126,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SchoolSystemTest" />
         <item itemvalue="JUnit.StudentTest.studentAverageGradeOfAll" />
         <item itemvalue="JUnit.StudentTest.studentAverageGradeOf" />
         <item itemvalue="JUnit.StudentTest" />
-        <item itemvalue="JUnit.SchoolSystemTest" />
         <item itemvalue="JUnit.SchoolSubjectTest" />
       </list>
     </recent_temporary>
@@ -144,13 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00026" summary="date format edited (timezone problem)">
-      <created>1585947347999</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1585947347999</updated>
     </task>
     <task id="LOCAL-00027" summary="Student addSubject test">
       <created>1585951789991</created>
@@ -488,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586023724050</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="MySchoolSystem avgOfStudentSubject method tests">
+      <created>1586024320036</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024320036</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -537,26 +537,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586023723196">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586024319114">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586023723196" />
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586022173304">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586024319114" />
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586024480947">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586022173304" />
-    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586022173304">
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586024480947" />
+    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586024480947">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586022173304" />
-    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586022173304">
+    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586024480947" />
+    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586024480947">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586022173304" />
-    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586022173304">
+    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586024480947" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586024480947">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586022173304" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586024480947" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
