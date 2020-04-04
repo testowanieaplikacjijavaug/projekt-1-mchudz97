@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/CsvOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ju5/test/CsvOperatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSubjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,12 +417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585999670451</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="SchoolSubject getter/setter implementation">
+      <created>1585999912806</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1585999912806</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Student changePername method added" />
     <MESSAGE value="Student changeIndex test" />
     <MESSAGE value="Student changeIndex method added" />
     <MESSAGE value="Student addStudentNote test with mock" />
@@ -446,7 +453,8 @@
     <MESSAGE value="Student removeGrade test" />
     <MESSAGE value="Student removeGrade method added" />
     <MESSAGE value="refactor + SchoolSubject getter/setter test" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor + SchoolSubject getter/setter test" />
+    <MESSAGE value="SchoolSubject getter/setter implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="SchoolSubject getter/setter implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -465,10 +473,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585999669192">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585999911915">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585999669192" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585999911915" />
     <state width="1390" height="323" key="GridCell.Tab.0.bottom" timestamp="1585999892561">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -485,10 +493,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="1390" height="323" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1585999892561" />
-    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1585984968114">
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586002991363">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1585984968114" />
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1586002991363" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/School$StudentTest.ic" NAME="StudentTest Coverage Results" MODIFIED="1585989462864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
