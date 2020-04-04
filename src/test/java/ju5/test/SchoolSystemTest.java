@@ -230,4 +230,36 @@ public class SchoolSystemTest {
     }
 
 
+    @Test
+    @DisplayName("Editing subject of not existing in system student will cause exception")
+    public void editStudentsGradeEx(){
+
+        Student testStudent = Mockito.mock(Student.class);
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade gmock = Mockito.mock(Grade.class);
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.editStudentsGrade(testStudent, iss, gmock, 4.5f));
+
+
+    }
+
+    @Test
+    @DisplayName("Editing grade of existing in system student")
+    public void editStudentsGrade(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade gmock = Mockito.mock(Grade.class);
+        doNothing().when(testStudent).editGrade(iss, gmock, 4.5f);
+        ss.addStudent(testStudent);
+        ss.editStudentsGrade(testStudent, iss, gmock, 4.5f);
+
+        verify(testStudent).editGrade(iss, gmock, 4.5f);
+
+    }
+
+
+
 }

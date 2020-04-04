@@ -124,20 +124,6 @@
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
     </task>
-    <task id="LOCAL-00011" summary="README.md with badges added">
-      <created>1585922348903</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1585922348903</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Student constructor test, enum &amp; interface added">
-      <created>1585933422302</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1585933422302</updated>
-    </task>
     <task id="LOCAL-00013" summary="Student constructor added">
       <created>1585936472085</created>
       <option name="number" value="00013" />
@@ -467,13 +453,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586014163814</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="SchoolSystem addGradeToStudent method tests">
+      <created>1586014843498</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014843498</updated>
+    </task>
+    <task id="LOCAL-00061" summary="SchoolSystem addGradeToStudent method added">
+      <created>1586014942865</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014942865</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Student removeSubject added" />
-    <MESSAGE value="Student removeSubject refactored" />
     <MESSAGE value="Student addGrade test" />
     <MESSAGE value="Student addGrade exception test" />
     <MESSAGE value="Student addGrade method added" />
@@ -497,7 +495,9 @@
     <MESSAGE value="SchoolSystem editStudentsSubject method added" />
     <MESSAGE value="SchoolSystem removeStudentsSubject method tests" />
     <MESSAGE value="SchoolSystem removeStudentsSubject method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem removeStudentsSubject method added" />
+    <MESSAGE value="SchoolSystem addGradeToStudent method tests" />
+    <MESSAGE value="SchoolSystem addGradeToStudent method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem addGradeToStudent method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -516,10 +516,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586014842539">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586014941751">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586014842539" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586014941751" />
     <state width="1389" height="323" key="GridCell.Tab.0.bottom" timestamp="1586013445650">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
