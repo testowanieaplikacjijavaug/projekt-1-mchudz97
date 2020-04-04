@@ -29,6 +29,27 @@ public class Student {
 
     }
 
+
+    public float averageGradeOf(ISchoolSubject subject){
+
+        if(!this.subjects.containsKey(subject)){
+
+            throw new IllegalArgumentException("invalid subject!");
+
+        }
+
+        float avg = 0;
+
+        for (Grade g: this.subjects.get(subject)) {
+
+            avg += g.getCurrentGrade();
+
+        }
+
+        return avg/this.subjects.get(subject).size();
+
+    }
+
     public void removeGrade(ISchoolSubject subject, Grade grade){
 
         if(!this.subjects.containsKey(subject)){

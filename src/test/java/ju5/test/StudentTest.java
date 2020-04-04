@@ -5,6 +5,7 @@ import Isolation.SchoolSubjectMock;
 import SchoolSystem.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mockito;
 
@@ -404,21 +405,25 @@ public class StudentTest {
 
     }
 
-    @Test
-    @DisplayName("Average student grade of existing subject")
-    public void studentAverageGradeOf(){
+    @ParameterizedTest(name = "{index}  avg test")
+    @DisplayName("SchoolSystem.Student averageGradeOf method test ")
+    @CsvFileSource(resources = "../../testData.csv")
+    public void studentAverageGradeOf(float v1, float v2, float v3, float result){
 
         Student st = new Student("Adam", "Beks", "111111");
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         st.addSubject(ssm);
         Grade testGrade1 = Mockito.mock(Grade.class);
         Grade testGrade2 = Mockito.mock(Grade.class);
-        when(testGrade1.getCurrentGrade()).thenReturn(4.5f);
-        when(testGrade2.getCurrentGrade()).thenReturn(3.5f);
+        Grade testGrade3 = Mockito.mock(Grade.class);
+        when(testGrade1.getCurrentGrade()).thenReturn(v1);
+        when(testGrade2.getCurrentGrade()).thenReturn(v2);
+        when(testGrade3.getCurrentGrade()).thenReturn(v3);
         st.addGrade(ssm, testGrade1);
-        st.addGrade(ssm, testGrade1);
+        st.addGrade(ssm, testGrade2);
+        st.addGrade(ssm, testGrade3);
 
-        Assertions.assertEquals(4.0f, st.averageGradeOf(ssm));
+        Assertions.assertEquals(result, st.averageGradeOf(ssm));
 
     }
 

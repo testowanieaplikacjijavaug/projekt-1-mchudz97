@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.SchoolSystemTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mchud\GIT JAVA TESTS\School\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StudentTest.studentAverageGradeOf">
     <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <useClassPathOnly />
@@ -105,10 +111,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTest.studentAverageGradeOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ju5.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ju5.test" />
+      <option name="MAIN_CLASS_NAME" value="ju5.test.StudentTest" />
+      <option name="METHOD_NAME" value="studentAverageGradeOf(float,float,float,float)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SchoolSystemTest" />
+        <item itemvalue="JUnit.StudentTest.studentAverageGradeOf" />
         <item itemvalue="JUnit.StudentTest" />
+        <item itemvalue="JUnit.SchoolSystemTest" />
         <item itemvalue="JUnit.SchoolSubjectTest" />
         <item itemvalue="JUnit.GradeTest" />
       </list>
@@ -124,13 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Student addStudentNote test with mock">
-      <created>1585945499365</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1585945499365</updated>
     </task>
     <task id="LOCAL-00022" summary="Student addStudentNote method added">
       <created>1585945527460</created>
@@ -468,12 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586017012408</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Student averageGradeOf test added">
+      <created>1586017834464</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1586017834464</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem addStudent test" />
     <MESSAGE value="SchoolSystem addStudent test with exception" />
     <MESSAGE value="SchoolSystem addStudent method added" />
     <MESSAGE value="SchoolSystem editStudent tests" />
@@ -498,7 +520,8 @@
     <MESSAGE value="SchoolSystem addNoteToStudent method added" />
     <MESSAGE value="SchoolSystem editStudentsNote method test + refactor" />
     <MESSAGE value="SchoolSystem editStudentsNote method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem editStudentsNote method added" />
+    <MESSAGE value="Student averageGradeOf test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student averageGradeOf test added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -517,26 +540,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="576" y="67" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586017011466">
+    <state x="576" y="67" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586017833349">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="576" y="67" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586017011466" />
-    <state width="1864" height="323" key="GridCell.Tab.0.bottom" timestamp="1586016995185">
+    <state x="576" y="67" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586017833349" />
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586020043807">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586016995185" />
-    <state width="1864" height="323" key="GridCell.Tab.0.center" timestamp="1586016995185">
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586020043807" />
+    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586020043807">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="323" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586016995185" />
-    <state width="1864" height="323" key="GridCell.Tab.0.left" timestamp="1586016995184">
+    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586020043807" />
+    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586020043807">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="323" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586016995184" />
-    <state width="1864" height="323" key="GridCell.Tab.0.right" timestamp="1586016995185">
+    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586020043807" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586020043807">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="323" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586016995185" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586020043807" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
