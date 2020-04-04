@@ -16,6 +16,18 @@ public class MySchoolSystem {
 
     }
 
+    public float avgOfAllStudentSubjects(Student st){
+
+        if(!this.students.contains(st)){
+
+            throw new IllegalArgumentException("that student doesnt exist in system");
+
+        }
+
+        return st.averageGradeOfAll();
+
+    }
+
     public float avgOfStudentSubject(Student st, ISchoolSubject subject){
 
         if(!this.students.contains(st)){
