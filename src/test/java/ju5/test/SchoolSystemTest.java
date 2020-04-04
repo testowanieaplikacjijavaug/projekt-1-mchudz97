@@ -125,7 +125,7 @@ public class SchoolSystemTest {
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
 
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> ss.addSubjectToStudentTest(testStudent, iss));
+                () -> ss.addSubjectToStudent(testStudent, iss));
 
     }
 
@@ -139,7 +139,7 @@ public class SchoolSystemTest {
 
         doNothing().when(testStudent).addSubject(iss);
 
-        ss.addSubjectToStudentTest(testStudent, iss);
+        ss.addSubjectToStudent(testStudent, iss);
 
         verify(testStudent).addSubject(iss);
 
