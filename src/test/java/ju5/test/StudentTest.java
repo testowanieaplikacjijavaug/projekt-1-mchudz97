@@ -214,6 +214,38 @@ public class StudentTest {
 
     }
 
+    @Test
+    @DisplayName("SchoolSystem.Student removeSubject method if subject not found test ")
+    public void studentRemoveSubjectTest1(){
+
+
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Student st = new Student("Adam", "Beks", "111111");
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.removeSubject(ssm));
+
+
+
+    }
+
+
+    @Test
+    @DisplayName("SchoolSystem.Student removeSubject method test ")
+    public void studentRemoveSubjectTest1(){
+
+
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Student st = new Student("Adam", "Beks", "111111");
+        st.addSubject(ssm);
+        st.removeSubject(ssm);
+
+        Assertions.assertFalse(st.subjects.containsKey(ssm));
+
+
+
+    }
 
 
 
