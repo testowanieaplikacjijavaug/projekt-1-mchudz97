@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" afterDir="false" />
+    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="Note editNote method added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
       <recent name="C:\Users\mchud\GIT JAVA TESTS\School\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NoteTest">
+  <component name="RunManager" selected="JUnit.SchoolSystemTest">
     <configuration name="NoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
@@ -124,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NoteTest" />
         <item itemvalue="JUnit.SchoolSystemTest" />
+        <item itemvalue="JUnit.StudentTest" />
+        <item itemvalue="JUnit.NoteTest" />
         <item itemvalue="JUnit.StudentTest.studentAverageGradeOfAll" />
         <item itemvalue="JUnit.StudentTest.studentAverageGradeOf" />
-        <item itemvalue="JUnit.StudentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,20 +145,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Student removeSubject added">
-      <created>1585989143442</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1585989143442</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Student removeSubject refactored">
-      <created>1585989311814</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1585989311814</updated>
     </task>
     <task id="LOCAL-00036" summary="Student removeSubject refactored">
       <created>1585989474764</created>
@@ -486,13 +475,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586025872862</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Note editNote method test">
+      <created>1586026162488</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026162488</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Note editNote method added">
+      <created>1586026222633</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026222633</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem removeStudentsSubject method tests" />
-    <MESSAGE value="SchoolSystem removeStudentsSubject method added" />
     <MESSAGE value="SchoolSystem addGradeToStudent method tests" />
     <MESSAGE value="SchoolSystem addGradeToStudent method added" />
     <MESSAGE value="SchoolSystem editStudentsGrade tests" />
@@ -516,7 +517,9 @@
     <MESSAGE value="Note of  method refactor" />
     <MESSAGE value="Note readNote method test" />
     <MESSAGE value="Note readNote method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Note readNote method added" />
+    <MESSAGE value="Note editNote method test" />
+    <MESSAGE value="Note editNote method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Note editNote method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -535,26 +538,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586026161570">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586026372182">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586026161570" />
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586026203002">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586026372182" />
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586026441432">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586026203002" />
-    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586026203002">
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441432" />
+    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586026441431">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586026203002" />
-    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586026203002">
+    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441431" />
+    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586026441431">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586026203002" />
-    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586026203002">
+    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441431" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586026441431">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586026203002" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441431" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

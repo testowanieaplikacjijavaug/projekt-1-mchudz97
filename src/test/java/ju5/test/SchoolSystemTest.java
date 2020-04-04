@@ -298,7 +298,7 @@ public class SchoolSystemTest {
 
 
         Student testStudent = Mockito.mock(Student.class);
-        INote noteMock = new NoteMock("hello", "11-10-2010");
+        INote noteMock = new NoteMock("hello");
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.addNoteToStudent(testStudent, noteMock));
@@ -313,7 +313,7 @@ public class SchoolSystemTest {
     public void addNoteToStudent() throws ParseException {
 
         Student testStudent = Mockito.spy(Mockito.mock(Student.class));
-        INote noteMock = new NoteMock("hello", "11-10-2010");
+        INote noteMock = new NoteMock("hello");
         ss.addStudent(testStudent);
         doNothing().when(testStudent).addStudentNote(noteMock);
         ss.addNoteToStudent(testStudent, noteMock);
@@ -328,7 +328,7 @@ public class SchoolSystemTest {
 
 
         Student testStudent = Mockito.mock(Student.class);
-        INote noteMock = new NoteMock("hello", "11-10-2010");
+        INote noteMock = new NoteMock("hello");
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.editStudentsNote(testStudent, noteMock, "edit"));
@@ -343,7 +343,7 @@ public class SchoolSystemTest {
     public void editStudentsNote() throws ParseException {
 
         Student testStudent = Mockito.spy(Mockito.mock(Student.class));
-        INote noteMock = new NoteMock("hello", "11-10-2010");
+        INote noteMock = new NoteMock("hello");
         ss.addStudent(testStudent);
         ss.addNoteToStudent(testStudent, noteMock);
         doNothing().when(testStudent).editStudentNote(noteMock, "edit");

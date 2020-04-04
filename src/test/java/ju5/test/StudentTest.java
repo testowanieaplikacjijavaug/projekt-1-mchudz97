@@ -143,11 +143,11 @@ public class StudentTest {
     @DisplayName("SchoolSystem.Student addStudentNoteMethod")
     public void studentReadNoteTest() throws ParseException {
         Student st = new Student("Adam", "Beks", "111111");
-        NoteMock nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
+        NoteMock nm = new NoteMock("byl niegrzeczny!");
         st.addStudentNote(nm);
 
 
-        Assertions.assertEquals("byl niegrzeczny! 11-10-2010", st.notes.get(0).readNote());
+        Assertions.assertEquals("byl niegrzeczny!", st.notes.get(0).readNote());
 
     }
 
@@ -155,11 +155,11 @@ public class StudentTest {
     @DisplayName("SchoolSystem.Student editStudentNoteMethod")
     public void studentEditNoteTest() throws ParseException {
         Student st = new Student("Adam", "Beks", "111111");
-        NoteMock nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
+        NoteMock nm = new NoteMock("byl niegrzeczny!");
         st.addStudentNote(nm);
         st.editStudentNote(nm, "jednak byl grzeczny!");
 
-        Assertions.assertEquals("jednak byl grzeczny! 11-10-2010", st.notes.get(0).readNote());
+        Assertions.assertEquals("jednak byl grzeczny!", st.notes.get(0).readNote());
 
 
 
@@ -170,7 +170,7 @@ public class StudentTest {
 
 
         Student st = new Student("Adam", "Beks", "111111");
-        INote nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
+        INote nm = new NoteMock("byl niegrzeczny!");
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.editStudentNote(nm, "jednak byl grzeczny!"));
 
