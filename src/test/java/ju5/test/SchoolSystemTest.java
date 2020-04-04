@@ -260,6 +260,34 @@ public class SchoolSystemTest {
 
     }
 
+    @Test
+    @DisplayName("Removing grade of not existing student")
+    public void removeStudentsGradeEx(){
+
+        Student testStudent = Mockito.mock(Student.class);
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade gmock = Mockito.mock(Grade.class);
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.removeStudentsGrade(testStudent, iss, gmock));
+
+    }
+
+    @Test
+    @DisplayName("Removing grade of existing student")
+    public void removeStudentsGrade(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade gmock = Mockito.mock(Grade.class);
+        ss.addStudent(testStudent);
+        doNothing().when(testStudent).removeGrade(iss, gmock);
+        ss.removeStudentsGrade(testStudent, iss, gmock);
+
+        verify(testStudent).removeGrade(iss, gmock);
+
+    }
 
 
 }
