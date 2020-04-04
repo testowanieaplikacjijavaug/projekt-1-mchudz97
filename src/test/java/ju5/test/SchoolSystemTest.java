@@ -117,11 +117,24 @@ public class SchoolSystemTest {
     }
 
     @Test
-    @DisplayName("Adding subject to student")
+    @DisplayName("Adding subject to not existing student in system")
     public void addSubjectToStudentTest(){
 
-        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        Student testStudent = Mockito.mock(Student.class);
 
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.addSubjectToStudentTest(testStudent, iss));
+
+    }
+
+    @Test
+    @DisplayName("Adding subject to not existing student")
+    public void addSubjectToStudentTest2(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ss.addStudent(testStudent);
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
 
         doNothing().when(testStudent).addSubject(iss);
@@ -131,8 +144,6 @@ public class SchoolSystemTest {
         verify(testStudent).addSubject(iss);
 
     }
-
-
 
 
 }
