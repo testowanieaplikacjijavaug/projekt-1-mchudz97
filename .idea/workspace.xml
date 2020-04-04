@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="Note editNote method added">
+    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/GradeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/NoteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSubjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/CsvOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/CsvOperatorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,32 +52,62 @@
       <recent name="C:\Users\mchud\GIT JAVA TESTS\School\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SchoolSystemTest">
-    <configuration name="NoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StudentTest">
+    <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ju5.test.*" />
+          <option name="PATTERN" value="assrtj.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ju5.test" />
-      <option name="MAIN_CLASS_NAME" value="ju5.test.NoteTest" />
+      <option name="PACKAGE_NAME" value="assrtj.test" />
+      <option name="MAIN_CLASS_NAME" value="assrtj.test.GradeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ju5.test.*" />
+          <option name="PATTERN" value="assrtj.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ju5.test" />
-      <option name="MAIN_CLASS_NAME" value="ju5.test.SchoolSystemTest" />
+      <option name="PACKAGE_NAME" value="assrtj.test" />
+      <option name="MAIN_CLASS_NAME" value="assrtj.test.NoteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchoolSubjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assrtj.test" />
+      <option name="MAIN_CLASS_NAME" value="assrtj.test.SchoolSubjectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchoolSystemTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assrtj.test" />
+      <option name="MAIN_CLASS_NAME" value="assrtj.test.SchoolSystemTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,56 +117,24 @@
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ju5.test.*" />
+          <option name="PATTERN" value="assrtj.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ju5.test" />
-      <option name="MAIN_CLASS_NAME" value="ju5.test.StudentTest" />
+      <option name="PACKAGE_NAME" value="assrtj.test" />
+      <option name="MAIN_CLASS_NAME" value="assrtj.test.StudentTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest.studentAverageGradeOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="School" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ju5.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ju5.test" />
-      <option name="MAIN_CLASS_NAME" value="ju5.test.StudentTest" />
-      <option name="METHOD_NAME" value="studentAverageGradeOf(float,float,float,float)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentTest.studentAverageGradeOfAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="School" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ju5.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ju5.test" />
-      <option name="MAIN_CLASS_NAME" value="ju5.test.StudentTest" />
-      <option name="METHOD_NAME" value="studentAverageGradeOfAll" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SchoolSystemTest" />
         <item itemvalue="JUnit.StudentTest" />
-        <item itemvalue="JUnit.NoteTest" />
-        <item itemvalue="JUnit.StudentTest.studentAverageGradeOfAll" />
-        <item itemvalue="JUnit.StudentTest.studentAverageGradeOf" />
+        <item itemvalue="JUnit.SchoolSystemTest (1)" />
+        <item itemvalue="JUnit.SchoolSubjectTest" />
+        <item itemvalue="JUnit.NoteTest (1)" />
+        <item itemvalue="JUnit.GradeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -145,13 +148,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Student removeSubject refactored">
-      <created>1585989474764</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1585989474764</updated>
     </task>
     <task id="LOCAL-00037" summary="Student addGrade test">
       <created>1585990337486</created>
@@ -489,12 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586026222633</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="small refactor">
+      <created>1586026465685</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026465685</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem addGradeToStudent method tests" />
     <MESSAGE value="SchoolSystem addGradeToStudent method added" />
     <MESSAGE value="SchoolSystem editStudentsGrade tests" />
     <MESSAGE value="SchoolSystem editStudentsGrade method tests" />
@@ -519,7 +521,8 @@
     <MESSAGE value="Note readNote method added" />
     <MESSAGE value="Note editNote method test" />
     <MESSAGE value="Note editNote method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Note editNote method added" />
+    <MESSAGE value="small refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="small refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -538,26 +541,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586026372182">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586026464667">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586026372182" />
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586026441432">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586026464667" />
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586030457792">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441432" />
-    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586026441431">
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457792" />
+    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586030457792">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441431" />
-    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586026441431">
+    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457792" />
+    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586030457791">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441431" />
-    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586026441431">
+    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457791" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586030457792">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586026441431" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457792" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

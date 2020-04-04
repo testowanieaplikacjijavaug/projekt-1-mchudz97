@@ -75,7 +75,7 @@ public class Student {
 
         if(!this.subjects.get(subject).contains(grade)){
 
-            throw new IllegalArgumentException("invalid index number!");
+            throw new IllegalArgumentException("grade not found!");
 
         }
 
@@ -96,7 +96,7 @@ public class Student {
 
         if(!this.subjects.get(subject).contains(grade)){
 
-            throw new IllegalArgumentException("invalid index number!");
+            throw new IllegalArgumentException("Grade not found!");
 
         }
 
@@ -110,7 +110,7 @@ public class Student {
 
         if(!this.subjects.containsKey(subject)){
 
-            throw new IllegalArgumentException("subject not found");
+            throw new IllegalArgumentException("subject not found!");
 
         }
 
@@ -171,7 +171,7 @@ public class Student {
     public void editStudentNote(INote note, String description){
 
         if(!this.notes.contains(note)){
-            throw new IllegalArgumentException("Wrong note index!");
+            throw new IllegalArgumentException("That note doesn't exists!");
         }
 
         note.editNote(description);
