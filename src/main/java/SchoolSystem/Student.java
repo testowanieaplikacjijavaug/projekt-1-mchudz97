@@ -30,6 +30,17 @@ public class Student {
     }
 
 
+    public void addGrade(ISchoolSubject subject, Grade grade){
+
+        if(!this.subjects.containsKey(subject)){
+
+            throw new IllegalArgumentException("subject not found");
+
+        }
+
+        this.subjects.get(subject).add(grade);
+
+    }
 
     public void editSubject(ISchoolSubject subject, SchoolSubjectEnum name){
 
