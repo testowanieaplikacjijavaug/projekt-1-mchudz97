@@ -1,0 +1,40 @@
+package SchoolSystem;
+
+public class Note implements INote {
+
+    private String description;
+
+    public static Note of(String desc){
+
+        if(desc == null || desc == ""){
+
+            throw new IllegalArgumentException("description got blank or null value!");
+
+        }
+
+        return new Note(desc);
+
+    }
+
+    private Note(String desc){
+        this.description = desc;
+    }
+
+    @Override
+    public String readNote() {
+        return this.description;
+    }
+
+    @Override
+    public void editNote(String description) {
+
+        if(description == null || description == ""){
+
+            throw new IllegalArgumentException("description got blank or null value!");
+
+        }
+
+        this.description = description;
+
+    }
+}

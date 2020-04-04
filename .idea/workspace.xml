@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/INote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/INote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/SchoolSubjectMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/SchoolSubjectMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/GradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/NoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSubjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/GradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/NoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSubjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/GradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSubjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="74" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1a1YoTn3qJXbFgcjfW1tHZghh6Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mchud\GIT JAVA TESTS\School\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StudentTest (1)">
+    <configuration name="GradeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ham.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.GradeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ham.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.NoteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchoolSubjectTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ham.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.SchoolSubjectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ham.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.StudentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assrtj.test" />
+      <option name="MAIN_CLASS_NAME" value="assrtj.test.StudentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudentTest (1)" />
+        <item itemvalue="JUnit.SchoolSubjectTest (1)" />
+        <item itemvalue="JUnit.NoteTest" />
+        <item itemvalue="JUnit.GradeTest (1)" />
+        <item itemvalue="JUnit.StudentTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="" />
+      <created>1585904741159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585904741159</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Student addGrade exception test">
+      <created>1585990741945</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1585990741945</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Student addGrade method added">
+      <created>1585991830913</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1585991830913</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Student editGrade test">
+      <created>1585995836711</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1585995836711</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Student editGrade method added">
+      <created>1585997439160</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1585997439160</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Student removeGrade test">
+      <created>1585998638636</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1585998638636</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Student removeGrade method added">
+      <created>1585998840490</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1585998840490</updated>
+    </task>
+    <task id="LOCAL-00044" summary="refactor + SchoolSubject getter/setter test">
+      <created>1585999670451</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1585999670451</updated>
+    </task>
+    <task id="LOCAL-00045" summary="SchoolSubject getter/setter implementation">
+      <created>1585999912806</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1585999912806</updated>
+    </task>
+    <task id="LOCAL-00046" summary="SchoolSystem addStudent test">
+      <created>1586003408576</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1586003408576</updated>
+    </task>
+    <task id="LOCAL-00047" summary="SchoolSystem addStudent test with exception">
+      <created>1586004065105</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1586004065105</updated>
+    </task>
+    <task id="LOCAL-00048" summary="SchoolSystem addStudent method added">
+      <created>1586004389322</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1586004389322</updated>
+    </task>
+    <task id="LOCAL-00049" summary="SchoolSystem editStudent tests">
+      <created>1586007490160</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1586007490160</updated>
+    </task>
+    <task id="LOCAL-00050" summary="SchoolSystem editStudent method added">
+      <created>1586007986800</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1586007986808</updated>
+    </task>
+    <task id="LOCAL-00051" summary="SchoolSystem removeStudent test">
+      <created>1586008252026</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586008252026</updated>
+    </task>
+    <task id="LOCAL-00052" summary="SchoolSystem removeStudent method added">
+      <created>1586008354786</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1586008354786</updated>
+    </task>
+    <task id="LOCAL-00053" summary="SchoolSystem addSubjectToStudent test">
+      <created>1586009668084</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1586009668084</updated>
+    </task>
+    <task id="LOCAL-00054" summary="SchoolSystem addSubjectToStudent test edit + new test">
+      <created>1586009887126</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1586009887126</updated>
+    </task>
+    <task id="LOCAL-00055" summary="SchoolSystem addSubjectToStudent method added">
+      <created>1586010041995</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1586010041995</updated>
+    </task>
+    <task id="LOCAL-00056" summary="SchoolSystem editStudentsSubject tests">
+      <created>1586013170562</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013170562</updated>
+    </task>
+    <task id="LOCAL-00057" summary="SchoolSystem editStudentsSubject method added">
+      <created>1586013342971</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013342971</updated>
+    </task>
+    <task id="LOCAL-00058" summary="SchoolSystem removeStudentsSubject method tests">
+      <created>1586014072334</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014072335</updated>
+    </task>
+    <task id="LOCAL-00059" summary="SchoolSystem removeStudentsSubject method added">
+      <created>1586014163814</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014163814</updated>
+    </task>
+    <task id="LOCAL-00060" summary="SchoolSystem addGradeToStudent method tests">
+      <created>1586014843498</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014843498</updated>
+    </task>
+    <task id="LOCAL-00061" summary="SchoolSystem addGradeToStudent method added">
+      <created>1586014942865</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1586014942865</updated>
+    </task>
+    <task id="LOCAL-00062" summary="SchoolSystem editStudentsGrade method tests">
+      <created>1586015287298</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1586015287298</updated>
+    </task>
+    <task id="LOCAL-00063" summary="SchoolSystem editStudentsGrade method added">
+      <created>1586015378274</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1586015378274</updated>
+    </task>
+    <task id="LOCAL-00064" summary="SchoolSystem removeStudentsGrade method tests">
+      <created>1586015620414</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1586015620414</updated>
+    </task>
+    <task id="LOCAL-00065" summary="SchoolSystem removeStudentsGrade method added">
+      <created>1586015739923</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1586015739923</updated>
+    </task>
+    <task id="LOCAL-00066" summary="SchoolSystem addNoteToStudent method test">
+      <created>1586016132379</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1586016132379</updated>
+    </task>
+    <task id="LOCAL-00067" summary="SchoolSystem addNoteToStudent method added">
+      <created>1586016227268</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1586016227268</updated>
+    </task>
+    <task id="LOCAL-00068" summary="SchoolSystem editStudentsNote method test + refactor">
+      <created>1586016890541</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1586016890541</updated>
+    </task>
+    <task id="LOCAL-00069" summary="SchoolSystem editStudentsNote method added">
+      <created>1586017012408</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1586017012408</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Student averageGradeOf test added">
+      <created>1586017834464</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1586017834464</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Student averageGradeOf method added + test refactor">
+      <created>1586020577354</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1586020577354</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Student averageGradeOfAll method test">
+      <created>1586021980222</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1586021980222</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Student averageGradeOfAll method added">
+      <created>1586022194496</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1586022194496</updated>
+    </task>
+    <task id="LOCAL-00074" summary="MySchoolSystem avgOfStudentSubject method tests">
+      <created>1586023724050</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1586023724050</updated>
+    </task>
+    <task id="LOCAL-00075" summary="MySchoolSystem avgOfStudentSubject method tests">
+      <created>1586024320036</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024320036</updated>
+    </task>
+    <task id="LOCAL-00076" summary="MySchoolSystem avgOfStudentSubject method added + avgOfAllStudentSubjects method tests">
+      <created>1586024744159</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024744159</updated>
+    </task>
+    <task id="LOCAL-00077" summary="MySchoolSystem avgOfAllStudentSubjects method added">
+      <created>1586024826102</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024826102</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Note of  method tests">
+      <created>1586025386999</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025386999</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Note of  method added">
+      <created>1586025579751</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025579751</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Note of  method refactor">
+      <created>1586025684025</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025684025</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Note readNote method test">
+      <created>1586025807990</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025807990</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Note readNote method added">
+      <created>1586025872862</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025872862</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Note editNote method test">
+      <created>1586026162488</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026162488</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Note editNote method added">
+      <created>1586026222633</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026222633</updated>
+    </task>
+    <task id="LOCAL-00085" summary="small refactor">
+      <created>1586026465685</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1586026465685</updated>
+    </task>
+    <task id="LOCAL-00086" summary="assertj tests added">
+      <created>1586030593308</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1586030593308</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="SchoolSystem editStudentsGrade tests" />
+    <MESSAGE value="SchoolSystem editStudentsGrade method tests" />
+    <MESSAGE value="SchoolSystem editStudentsGrade method added" />
+    <MESSAGE value="SchoolSystem removeStudentsGrade method tests" />
+    <MESSAGE value="SchoolSystem removeStudentsGrade method added" />
+    <MESSAGE value="SchoolSystem addNoteToStudent method test" />
+    <MESSAGE value="SchoolSystem addNoteToStudent method added" />
+    <MESSAGE value="SchoolSystem editStudentsNote method test + refactor" />
+    <MESSAGE value="SchoolSystem editStudentsNote method added" />
+    <MESSAGE value="Student averageGradeOf test added" />
+    <MESSAGE value="Student averageGradeOf method added + test refactor" />
+    <MESSAGE value="Student averageGradeOfAll method test" />
+    <MESSAGE value="Student averageGradeOfAll method added" />
+    <MESSAGE value="MySchoolSystem avgOfStudentSubject method tests" />
+    <MESSAGE value="MySchoolSystem avgOfStudentSubject method added + avgOfAllStudentSubjects method tests" />
+    <MESSAGE value="MySchoolSystem avgOfAllStudentSubjects method added" />
+    <MESSAGE value="Note of  method tests" />
+    <MESSAGE value="Note of  method added" />
+    <MESSAGE value="Note of  method refactor" />
+    <MESSAGE value="Note readNote method test" />
+    <MESSAGE value="Note readNote method added" />
+    <MESSAGE value="Note editNote method test" />
+    <MESSAGE value="Note editNote method added" />
+    <MESSAGE value="small refactor" />
+    <MESSAGE value="assertj tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="assertj tests added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="482" y="102" key="#GradeTest/0.0.1920.1030@0.0.1920.1030" timestamp="1585941264491" />
+    <state x="623" y="207" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585931472695">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="623" y="207" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1585931472695" />
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1585984307573">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="717" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030@0.0.1920.1030" timestamp="1585984307573" />
+    <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585908150172">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586030592238">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586030592238" />
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586032216884">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216884" />
+    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586032216884">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216884" />
+    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586032216883">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216883" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586032216884">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216884" />
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1586008283150" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/School$StudentTest.ic" NAME="StudentTest Coverage Results" MODIFIED="1585989462864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ju5.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/School$GradeTest.ic" NAME="GradeTest Coverage Results" MODIFIED="1585919027745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ju5.test.*</FILTER>
+    </SUITE>
+  </component>
+</project>
