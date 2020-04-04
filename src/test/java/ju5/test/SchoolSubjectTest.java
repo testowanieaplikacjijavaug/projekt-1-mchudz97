@@ -15,17 +15,17 @@ public class SchoolSubjectTest {
 
         SchoolSubject schoolSubject = new SchoolSubject(SchoolSubjectEnum.Wychowanie_fizyczne);
 
-        Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne, schoolSubject.getName());
+        Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne.name(), schoolSubject.getName());
 
     }
 
     @Test
     @DisplayName("SchoolSystem.SchoolSubject setter test")
-    public void getterTest(){
+    public void setterTest(){
 
         SchoolSubject schoolSubject = new SchoolSubject(SchoolSubjectEnum.Wychowanie_fizyczne);
         schoolSubject.setName(SchoolSubjectEnum.Biologia);
-        Assertions.assertEquals(SchoolSubjectEnum.Biologia, schoolSubject.getName());
+        Assertions.assertEquals(SchoolSubjectEnum.Biologia.name(), schoolSubject.getName());
 
     }
 
