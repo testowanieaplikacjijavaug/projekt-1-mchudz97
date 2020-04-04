@@ -9,7 +9,6 @@ public class SchoolSubject implements ISchoolSubject {
 
     }
 
-
     @Override
     public String getName() {
         return this.name.name();
@@ -19,6 +18,5 @@ public class SchoolSubject implements ISchoolSubject {
     public void setName(SchoolSubjectEnum name) {
         this.name = name;
     }
-
 
 }

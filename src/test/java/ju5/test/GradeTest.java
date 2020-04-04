@@ -10,10 +10,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class GradeTest {
 
-
-
-
-
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
     @DisplayName("SchoolSystem.Grade class of method test if invalid value")
     @CsvSource({"0", "10", "-3", "1", "2.25", "5.5"})

@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/GradeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/NoteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSubjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSystemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/CsvOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/INote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/INote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/SchoolSubject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/CsvOperatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/NoteMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/SchoolSubjectMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/SchoolSubjectMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/GradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/NoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSubjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/assrtj/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assrtj/test/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/GradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/NoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSubjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ham/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ham/test/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/GradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/GradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSubjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSubjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,62 +66,62 @@
       <recent name="C:\Users\mchud\GIT JAVA TESTS\School\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentTest">
-    <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StudentTest (1)">
+    <configuration name="GradeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="PATTERN" value="ham.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assrtj.test" />
-      <option name="MAIN_CLASS_NAME" value="assrtj.test.GradeTest" />
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.GradeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="PATTERN" value="ham.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assrtj.test" />
-      <option name="MAIN_CLASS_NAME" value="assrtj.test.NoteTest" />
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.NoteTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolSubjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SchoolSubjectTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="PATTERN" value="ham.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assrtj.test" />
-      <option name="MAIN_CLASS_NAME" value="assrtj.test.SchoolSubjectTest" />
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.SchoolSubjectTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolSystemTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="School" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assrtj.test.*" />
+          <option name="PATTERN" value="ham.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assrtj.test" />
-      <option name="MAIN_CLASS_NAME" value="assrtj.test.SchoolSystemTest" />
+      <option name="PACKAGE_NAME" value="ham.test" />
+      <option name="MAIN_CLASS_NAME" value="ham.test.StudentTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentTest (1)" />
+        <item itemvalue="JUnit.SchoolSubjectTest (1)" />
+        <item itemvalue="JUnit.NoteTest" />
+        <item itemvalue="JUnit.GradeTest (1)" />
         <item itemvalue="JUnit.StudentTest" />
-        <item itemvalue="JUnit.SchoolSystemTest (1)" />
-        <item itemvalue="JUnit.SchoolSubjectTest" />
-        <item itemvalue="JUnit.NoteTest (1)" />
-        <item itemvalue="JUnit.GradeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,13 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Student addGrade test">
-      <created>1585990337486</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1585990337486</updated>
     </task>
     <task id="LOCAL-00038" summary="Student addGrade exception test">
       <created>1585990741945</created>
@@ -492,12 +499,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586026465685</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="assertj tests added">
+      <created>1586030593308</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1586030593308</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem addGradeToStudent method added" />
     <MESSAGE value="SchoolSystem editStudentsGrade tests" />
     <MESSAGE value="SchoolSystem editStudentsGrade method tests" />
     <MESSAGE value="SchoolSystem editStudentsGrade method added" />
@@ -522,7 +535,8 @@
     <MESSAGE value="Note editNote method test" />
     <MESSAGE value="Note editNote method added" />
     <MESSAGE value="small refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="small refactor" />
+    <MESSAGE value="assertj tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="assertj tests added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -541,26 +555,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586026464667">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586030592238">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586026464667" />
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586030457792">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586030592238" />
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586032216884">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457792" />
-    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586030457792">
+    <state width="1864" height="381" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216884" />
+    <state width="1864" height="381" key="GridCell.Tab.0.center" timestamp="1586032216884">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457792" />
-    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586030457791">
+    <state width="1864" height="381" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216884" />
+    <state width="1864" height="381" key="GridCell.Tab.0.left" timestamp="1586032216883">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457791" />
-    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586030457792">
+    <state width="1864" height="381" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216883" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right" timestamp="1586032216884">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586030457792" />
+    <state width="1864" height="381" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586032216884" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

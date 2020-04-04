@@ -1,14 +1,11 @@
 package assrtj.test;
-
 import SchoolSystem.SchoolSubject;
 import SchoolSystem.SchoolSubjectEnum;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.*;
 
 public class SchoolSubjectTest {
-
 
     @Test
     @DisplayName("SchoolSystem.SchoolSubject getter test")

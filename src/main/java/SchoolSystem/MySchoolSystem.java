@@ -1,5 +1,4 @@
 package SchoolSystem;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +11,6 @@ public class MySchoolSystem {
 
         this.students = new ArrayList<Student>(0);
         this.schoolSubjects = new ArrayList<ISchoolSubject>(0);
-
 
     }
 
@@ -64,7 +62,6 @@ public class MySchoolSystem {
 
     }
 
-
     public void removeStudentsGrade(Student st, ISchoolSubject subject, Grade g){
 
         if(!this.students.contains(st)){
@@ -74,7 +71,6 @@ public class MySchoolSystem {
         }
 
         st.removeGrade(subject, g);
-
 
     }
 
@@ -102,7 +98,6 @@ public class MySchoolSystem {
 
     }
 
-
     public void removeStudentsSubject(Student st, ISchoolSubject subject){
 
         if(!this.students.contains(st)){
@@ -124,7 +119,6 @@ public class MySchoolSystem {
         }
 
         st.editSubject(subject, name);
-
 
     }
 
@@ -153,7 +147,6 @@ public class MySchoolSystem {
 
     }
 
-
     public void addStudent(Student st){
 
         if(this.duplicateFinder(st.getIndex())){
@@ -180,7 +173,6 @@ public class MySchoolSystem {
 
     }
 
-
     private boolean duplicateFinder(String index){
 
         for (Student s: students) {
@@ -194,8 +186,5 @@ public class MySchoolSystem {
         return false;
 
     }
-
-
-
 
 }

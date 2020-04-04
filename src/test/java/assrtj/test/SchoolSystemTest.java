@@ -1,5 +1,4 @@
 package assrtj.test;
-
 import Isolation.NoteMock;
 import Isolation.SchoolSubjectMock;
 import SchoolSystem.*;
@@ -7,17 +6,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
-
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.doReturn;
-
 import static org.assertj.core.api.Assertions.*;
 
 public class SchoolSystemTest {
 
     private MySchoolSystem ss;
-
 
     @BeforeEach
     public void reset(){
@@ -25,7 +20,6 @@ public class SchoolSystemTest {
         ss = new MySchoolSystem();
 
     }
-
 
     @Test
     @DisplayName("simple add student MySchoolSystem test")
@@ -38,6 +32,7 @@ public class SchoolSystemTest {
         assertThat(ss.students.contains(st)).isTrue();
 
     }
+
     @Test
     @DisplayName("Student index must be unique. In other case it will throw exception")
     public void addStudentWithException(){
@@ -59,14 +54,9 @@ public class SchoolSystemTest {
     public void editStudent1(){
 
         Student testStudent = Mockito.spy(Mockito.mock(Student.class));
-
         doNothing().when(testStudent).changeName("Oskar");
         doNothing().when(testStudent).changePername("Rak");
         doNothing().when(testStudent).changeIndex("111111");
-
-
-
-
         ss.editStudent(testStudent, "111111","Oskar", "Rak");
 
         verify(testStudent).changeName("Oskar");
@@ -76,6 +66,7 @@ public class SchoolSystemTest {
 
 
     }
+
     @Test
     @DisplayName("Editing throws exception when changed index already exists")
     public void editStudentThrowsException(){
@@ -85,7 +76,6 @@ public class SchoolSystemTest {
         when(testStudent1.getIndex()).thenReturn("111111");
         when(testStudent2.getIndex()).thenReturn("111112");
         ss.addStudent(testStudent1);
-
         ss.addStudent(testStudent2);
 
         assertThatThrownBy(() -> {ss.editStudent(testStudent2, "111111", "Jan", "Janusz");}).
@@ -98,7 +88,6 @@ public class SchoolSystemTest {
     public void removeStudentExceptionTest(){
 
         Student testStudent1 = Mockito.mock(Student.class);
-
 
         assertThatThrownBy(() -> {ss.removeStudent(testStudent1);}).
                 isInstanceOf(IllegalArgumentException.class).hasMessage("that student doesn't exists in system!");
@@ -125,7 +114,6 @@ public class SchoolSystemTest {
 
         assertThatThrownBy(() -> {ss.addSubjectToStudent(testStudent, iss);}).
                 isInstanceOf(IllegalArgumentException.class).hasMessage("that student doesnt exist in system");
-
 
     }
 
@@ -237,8 +225,6 @@ public class SchoolSystemTest {
         assertThatThrownBy(() -> {ss.editStudentsGrade(testStudent, iss, gmock, 4.5f);}).
                 isInstanceOf(IllegalArgumentException.class).hasMessage("that student doesnt exist in system");
 
-
-
     }
 
     @Test
@@ -267,7 +253,6 @@ public class SchoolSystemTest {
         assertThatThrownBy(() -> {ss.removeStudentsGrade(testStudent, iss, gmock);}).
                 isInstanceOf(IllegalArgumentException.class).hasMessage("that student doesnt exist in system");
 
-
     }
 
     @Test
@@ -288,7 +273,6 @@ public class SchoolSystemTest {
     @Test
     @DisplayName("Adding note to not existing student")
     public void addNoteToStudentEx() {
-
 
         Student testStudent = Mockito.mock(Student.class);
         INote noteMock = new NoteMock("hello");
@@ -315,7 +299,6 @@ public class SchoolSystemTest {
     @Test
     @DisplayName("Editing note of not existing student")
     public void editStudentsNoteEx(){
-
 
         Student testStudent = Mockito.mock(Student.class);
         INote noteMock = new NoteMock("hello");

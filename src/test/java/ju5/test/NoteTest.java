@@ -1,8 +1,6 @@
 package ju5.test;
-
 import SchoolSystem.Note;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -57,12 +55,11 @@ public class NoteTest {
     public void editNoteTest(){
 
         String test = "Nowa wartosc";
-        Note n = Note.of("A");
+        n = Note.of("A");
         n.editNote(test);
 
         Assertions.assertEquals(test, n.readNote());
 
     }
-
 
 }

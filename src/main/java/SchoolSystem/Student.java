@@ -176,9 +176,7 @@ public class Student {
 
         note.editNote(description);
 
-
     }
-
 
     public void changeName(String name){
 
@@ -215,7 +213,6 @@ public class Student {
         this.index = index;
 
     }
-
 
     public String getName(){
 

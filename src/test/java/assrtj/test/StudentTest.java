@@ -1,19 +1,14 @@
 package assrtj.test;
-
 import Isolation.NoteMock;
 import Isolation.SchoolSubjectMock;
 import SchoolSystem.*;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mockito;
-
 import java.text.ParseException;
-
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.when;
 import static org.assertj.core.api.Assertions.*;
@@ -32,9 +27,6 @@ public class StudentTest {
         return val;
 
     }
-
-
-
 
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
     @DisplayName("SchoolSystem.Student class constructor test if invalid name")
@@ -58,8 +50,6 @@ public class StudentTest {
                 isInstanceOf(IllegalArgumentException.class).hasMessage("There is some wrong data!");
 
     }
-
-
 
     @ParameterizedTest(name = "{index} Parameter {2} throws argument exception")
     @DisplayName("SchoolSystem.Student class constructor test if invalid index")
@@ -86,6 +76,7 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student changeName method test if valid name")
     public void studentChangeNameTest(){
+
         Student st = new Student("Adam", "Beks", "111111");
         st.changeName("Janusz");
 
@@ -108,6 +99,7 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student changePername method test if valid name")
     public void studentChangePernameTest(){
+
         Student st = new Student("Adam", "Beks", "111111");
         st.changePername("Nowak");
 
@@ -130,6 +122,7 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student changeIndex method test if valid name")
     public void studentChangeIndexTest(){
+
         Student st = new Student("Adam", "Beks", "111111");
         st.changeIndex("300003");
 
@@ -140,6 +133,7 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student addStudentNoteMethod")
     public void studentReadNoteTest() throws ParseException {
+
         Student st = new Student("Adam", "Beks", "111111");
         NoteMock nm = new NoteMock("byl niegrzeczny!");
         st.addStudentNote(nm);
@@ -151,6 +145,7 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student editStudentNoteMethod")
     public void studentEditNoteTest() throws ParseException {
+
         Student st = new Student("Adam", "Beks", "111111");
         NoteMock nm = new NoteMock("byl niegrzeczny!");
         st.addStudentNote(nm);
@@ -159,10 +154,10 @@ public class StudentTest {
         assertThat(st.notes.get(0).readNote()).isEqualTo("jednak byl grzeczny!");
 
     }
+
     @Test
     @DisplayName("SchoolSystem.Student editStudentNoteMethod throws exception")
     public void studentEditNoteThrowsExceptionTest() throws ParseException {
-
 
         Student st = new Student("Adam", "Beks", "111111");
         INote nm = new NoteMock("byl niegrzeczny!");
@@ -213,7 +208,6 @@ public class StudentTest {
     @DisplayName("SchoolSystem.Student removeSubject method if subject not found test ")
     public void studentRemoveSubjectTest1(){
 
-
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Student st = new Student("Adam", "Beks", "111111");
 
@@ -222,11 +216,9 @@ public class StudentTest {
 
     }
 
-
     @Test
     @DisplayName("SchoolSystem.Student removeSubject method test ")
     public void studentRemoveSubjectTest2(){
-
 
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Student st = new Student("Adam", "Beks", "111111");
@@ -236,7 +228,6 @@ public class StudentTest {
         assertThat(st.subjects.containsKey(ssm)).isFalse();
 
     }
-
 
     @Test
     @DisplayName("SchoolSystem.Student addGrade method test if no subject")
@@ -332,7 +323,6 @@ public class StudentTest {
         assertThatThrownBy(() -> {st.removeGrade(ssm, testGrade1);}).
                 isInstanceOf(IllegalArgumentException.class).hasMessage("grade not found!");
 
-
     }
 
     @Test
@@ -384,6 +374,7 @@ public class StudentTest {
         assertThat(st.averageGradeOf(ssm)).isEqualTo(result);
 
     }
+
     @Test
     @DisplayName("Average student grade of all subjects")
     public void studentAverageGradeOfAll(){

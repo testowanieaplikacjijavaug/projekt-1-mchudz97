@@ -28,18 +28,6 @@ public class StudentTest {
 
     }
 
-
-//    public Student studentTest
-    public Grade grade;
-    public Student student;
-    MySchoolSystem mss;
-    @BeforeEach
-    void setup(){
-
-        grade = Grade.of(4.0f);
-
-    }
-
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
     @DisplayName("SchoolSystem.Student class constructor test if invalid name")
     @CsvSource({"null,Baa,111111", "'',Baa,111111", "A,Baa,111111", "aa,Baa,111111",
@@ -50,7 +38,6 @@ public class StudentTest {
                 () -> new Student(nullConventer(name), pername, index));
 
     }
-
 
     @ParameterizedTest(name = "{index} Parameter {1} throws argument exception")
     @DisplayName("SchoolSystem.Student class constructor test if invalid pername")
@@ -63,8 +50,6 @@ public class StudentTest {
 
     }
 
-
-
     @ParameterizedTest(name = "{index} Parameter {2} throws argument exception")
     @DisplayName("SchoolSystem.Student class constructor test if invalid index")
     @CsvSource({"Aaa,Baa,null", "Aaa,Baa,33333", "Aaa,Baa,3333333", "Aaa,Baa,AAAAAA", "Aaa,Baa,B53214!"})
@@ -74,7 +59,6 @@ public class StudentTest {
                 () -> new Student(name, pername, nullConventer(index)));
 
     }
-
 
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
     @DisplayName("SchoolSystem.Student changeName method test if invalid name")
@@ -95,6 +79,7 @@ public class StudentTest {
         st.changeName("Janusz");
 
         Assertions.assertEquals("Janusz", st.getName());
+
     }
 
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
@@ -112,10 +97,12 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student changePername method test if valid name")
     public void studentChangePernameTest(){
+
         Student st = new Student("Adam", "Beks", "111111");
         st.changePername("Nowak");
 
         Assertions.assertEquals("Nowak", st.getPername());
+
     }
 
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
@@ -133,19 +120,21 @@ public class StudentTest {
     @Test
     @DisplayName("SchoolSystem.Student changeIndex method test if valid name")
     public void studentChangeIndexTest(){
+
         Student st = new Student("Adam", "Beks", "111111");
         st.changeIndex("300003");
 
         Assertions.assertEquals("300003", st.getIndex());
+
     }
 
     @Test
     @DisplayName("SchoolSystem.Student addStudentNoteMethod")
     public void studentReadNoteTest() throws ParseException {
+
         Student st = new Student("Adam", "Beks", "111111");
         NoteMock nm = new NoteMock("byl niegrzeczny!");
         st.addStudentNote(nm);
-
 
         Assertions.assertEquals("byl niegrzeczny!", st.notes.get(0).readNote());
 
@@ -161,16 +150,14 @@ public class StudentTest {
 
         Assertions.assertEquals("jednak byl grzeczny!", st.notes.get(0).readNote());
 
-
-
     }
     @Test
     @DisplayName("SchoolSystem.Student editStudentNoteMethod throws exception")
     public void studentEditNoteThrowsExceptionTest() throws ParseException {
 
-
         Student st = new Student("Adam", "Beks", "111111");
         INote nm = new NoteMock("byl niegrzeczny!");
+
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.editStudentNote(nm, "jednak byl grzeczny!"));
 
@@ -186,7 +173,6 @@ public class StudentTest {
 
         Assertions.assertTrue(st.subjects.containsKey(ssm));
 
-
     }
 
     @Test
@@ -200,8 +186,6 @@ public class StudentTest {
 
         Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne.name(), ssm.getName());
 
-
-
     }
 
     @Test
@@ -211,11 +195,8 @@ public class StudentTest {
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Student st = new Student("Adam", "Beks", "111111");
 
-
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.editSubject(ssm, SchoolSubjectEnum.Wychowanie_fizyczne));
-
-
 
     }
 
@@ -223,23 +204,17 @@ public class StudentTest {
     @DisplayName("SchoolSystem.Student removeSubject method if subject not found test ")
     public void studentRemoveSubjectTest1(){
 
-
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Student st = new Student("Adam", "Beks", "111111");
-
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.removeSubject(ssm));
 
-
-
     }
-
 
     @Test
     @DisplayName("SchoolSystem.Student removeSubject method test ")
     public void studentRemoveSubjectTest2(){
-
 
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Student st = new Student("Adam", "Beks", "111111");
@@ -248,10 +223,7 @@ public class StudentTest {
 
         Assertions.assertFalse(st.subjects.containsKey(ssm));
 
-
-
     }
-
 
     @Test
     @DisplayName("SchoolSystem.Student addGrade method test if no subject")
@@ -264,8 +236,6 @@ public class StudentTest {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.addGrade(ssm, testGrade1));
 
-
-
     }
 
 
@@ -277,14 +247,9 @@ public class StudentTest {
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         st.addSubject(ssm);
         Grade testGrade1 = Mockito.mock(Grade.class);
-
-
         st.addGrade(ssm, testGrade1);
 
         Assertions.assertEquals(testGrade1, st.subjects.get(ssm).get(0));
-
-
-
 
     }
 
@@ -294,14 +259,10 @@ public class StudentTest {
 
         Student st = new Student("Adam", "Beks", "111111");
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
-
         Grade testGrade1 = Mockito.mock(Grade.class);
-
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.editGrade(ssm, testGrade1, 4.5f));
-
-
 
     }
     @Test
@@ -313,16 +274,10 @@ public class StudentTest {
         st.addSubject(ssm);
         Grade testGrade1 = Mockito.mock(Grade.class);
 
-
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.editGrade(ssm, testGrade1, 4.5f));
 
-
-
     }
-
-
-
 
     @Test
     @DisplayName("SchoolSystem.Student editGrade method test")
@@ -332,18 +287,11 @@ public class StudentTest {
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         st.addSubject(ssm);
         Grade testGrade1 = Mockito.spy(Mockito.mock(Grade.class));
-
         doNothing().when(testGrade1).correctGradeTo(4.5f);
-
-
         st.addGrade(ssm, testGrade1);
-
         st.editGrade(ssm, testGrade1, 4.0f);
 
         verify(testGrade1).correctGradeTo(4.0f);
-
-
-
 
     }
 
@@ -357,7 +305,6 @@ public class StudentTest {
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.removeGrade(ssm, testGrade1));
-
 
     }
 
@@ -373,7 +320,6 @@ public class StudentTest {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.removeGrade(ssm, testGrade1));
 
-
     }
 
     @Test
@@ -388,7 +334,6 @@ public class StudentTest {
         st.removeGrade(ssm, testGrade1);
         Assertions.assertFalse(st.subjects.get(ssm).contains(testGrade1));
 
-
     }
 
     @Test
@@ -401,7 +346,6 @@ public class StudentTest {
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> st.averageGradeOf(ssm));
-
 
     }
 
@@ -426,6 +370,7 @@ public class StudentTest {
         Assertions.assertEquals(result, st.averageGradeOf(ssm));
 
     }
+
     @Test
     @DisplayName("Average student grade of all subjects")
     public void studentAverageGradeOfAll(){
@@ -447,7 +392,6 @@ public class StudentTest {
         when(testGrade5.getCurrentGrade()).thenReturn(4.0f);
         when(testGrade6.getCurrentGrade()).thenReturn(4.0f);
 
-
         st.addSubject(ssm);
         st.addSubject(ssm2);
         st.addSubject(ssm3);
@@ -458,15 +402,8 @@ public class StudentTest {
         st.addGrade(ssm3, testGrade5);
         st.addGrade(ssm3, testGrade6);
 
-
         Assertions.assertEquals(3.0f, st.averageGradeOfAll());
 
-
     }
-
-
-
-
-
 
 }

@@ -1,9 +1,7 @@
 package ju5.test;
-
 import SchoolSystem.SchoolSubject;
 import SchoolSystem.SchoolSubjectEnum;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -28,10 +26,5 @@ public class SchoolSubjectTest {
         Assertions.assertEquals(SchoolSubjectEnum.Biologia.name(), schoolSubject.getName());
 
     }
-
-
-
-
-
 
 }

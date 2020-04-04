@@ -8,9 +8,6 @@ import static org.assertj.core.api.Assertions.*;
 public class GradeTest {
 
 
-
-
-
     @ParameterizedTest(name = "{index} Parameter {0} throws argument exception")
     @DisplayName("SchoolSystem.Grade class of method test if invalid value")
     @CsvSource({"0", "10", "-3", "1", "2.25", "5.5"})
@@ -25,7 +22,6 @@ public class GradeTest {
     @DisplayName("SchoolSystem.Grade class correctGrade method test if invalid value")
     @CsvSource({"0", "10", "-3", "1", "2.25", "5.5"})
     public void correctGradeMethodTestException(String val){
-
 
         assertThatThrownBy(() -> {SchoolSystem.Grade.of(3).correctGradeTo(Float.parseFloat(val));}).
                 isInstanceOf(IllegalArgumentException.class).hasMessage("SchoolSystem.Grade value is out of range.");

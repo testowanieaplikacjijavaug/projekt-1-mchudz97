@@ -26,7 +26,6 @@ public class SchoolSystemTest {
 
     }
 
-
     @Test
     @DisplayName("simple add student MySchoolSystem test")
     public void addStudentTest(){
@@ -36,7 +35,6 @@ public class SchoolSystemTest {
         ss.addStudent(st);
 
         Assertions.assertTrue( ss.students.contains(st));
-
 
     }
     @Test
@@ -53,7 +51,6 @@ public class SchoolSystemTest {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.addStudent(st2));
 
-
     }
 
     @Test
@@ -66,16 +63,11 @@ public class SchoolSystemTest {
         doNothing().when(testStudent).changePername("Rak");
         doNothing().when(testStudent).changeIndex("111111");
 
-
-
-
         ss.editStudent(testStudent, "111111","Oskar", "Rak");
 
         verify(testStudent).changeName("Oskar");
         verify(testStudent).changePername("Rak");
         verify(testStudent).changeIndex("111111");
-
-
 
     }
     @Test
@@ -90,10 +82,8 @@ public class SchoolSystemTest {
 
         ss.addStudent(testStudent2);
 
-
-            Assertions.assertThrows(IllegalArgumentException.class,
-                    () -> ss.editStudent(testStudent2, "111111", "Jan", "Janusz"));
-
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.editStudent(testStudent2, "111111", "Jan", "Janusz"));
 
     }
 
@@ -105,7 +95,6 @@ public class SchoolSystemTest {
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.removeStudent(testStudent1));
-
 
     }
 
@@ -157,8 +146,8 @@ public class SchoolSystemTest {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.editStudentsSubject(testStudent, iss, SchoolSubjectEnum.Wychowanie_fizyczne));
 
-
     }
+
     @Test
     @DisplayName("Editing subject of existing in system student")
     public void editStudentsSubject(){
@@ -183,7 +172,6 @@ public class SchoolSystemTest {
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.removeStudentsSubject(testStudent, iss));
-
 
     }
 
@@ -213,8 +201,6 @@ public class SchoolSystemTest {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.addGradeToStudent(testStudent, iss, gmock));
 
-
-
     }
 
     @Test
@@ -232,7 +218,6 @@ public class SchoolSystemTest {
 
     }
 
-
     @Test
     @DisplayName("Editing subject of not existing in system student will cause exception")
     public void editStudentsGradeEx(){
@@ -241,10 +226,8 @@ public class SchoolSystemTest {
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Grade gmock = Mockito.mock(Grade.class);
 
-
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.editStudentsGrade(testStudent, iss, gmock, 4.5f));
-
 
     }
 
@@ -271,7 +254,6 @@ public class SchoolSystemTest {
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
         Grade gmock = Mockito.mock(Grade.class);
 
-
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.removeStudentsGrade(testStudent, iss, gmock));
 
@@ -296,15 +278,11 @@ public class SchoolSystemTest {
     @DisplayName("Adding note to not existing student")
     public void addNoteToStudentEx() throws ParseException {
 
-
         Student testStudent = Mockito.mock(Student.class);
         INote noteMock = new NoteMock("hello");
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.addNoteToStudent(testStudent, noteMock));
-
-
-
 
     }
 
@@ -326,15 +304,11 @@ public class SchoolSystemTest {
     @DisplayName("Editing note of not existing student")
     public void editStudentsNoteEx() throws ParseException {
 
-
         Student testStudent = Mockito.mock(Student.class);
         INote noteMock = new NoteMock("hello");
 
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.editStudentsNote(testStudent, noteMock, "edit"));
-
-
-
 
     }
 
@@ -353,7 +327,6 @@ public class SchoolSystemTest {
 
     }
 
-
     @Test
     @DisplayName("Average grade of subject from non existing student will throw exception")
     public void avgOfStudentSubjectEx(){
@@ -361,10 +334,8 @@ public class SchoolSystemTest {
         Student testStudent = Mockito.mock(Student.class);
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Chemia);
 
-
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.avgOfStudentSubject(testStudent, iss));
-
 
     }
 
@@ -388,10 +359,8 @@ public class SchoolSystemTest {
         Student testStudent = Mockito.mock(Student.class);
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Chemia);
 
-
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> ss.avgOfAllStudentSubjects(testStudent));
-
 
     }
 
@@ -406,8 +375,6 @@ public class SchoolSystemTest {
         Assertions.assertEquals(4.5f, ss.avgOfAllStudentSubjects(testStudent));
 
     }
-
-
 
 
 }
