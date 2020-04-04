@@ -22,7 +22,7 @@ public class Note implements INote {
 
     @Override
     public String readNote() {
-        return null;
+        return this.description;
     }
 
     @Override
