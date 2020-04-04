@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
     </list>
@@ -452,12 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586004065105</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="SchoolSystem addStudent method added">
+      <created>1586004389322</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1586004389322</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Student addStudentNote test with mock" />
     <MESSAGE value="Student addStudentNote method added" />
     <MESSAGE value="Student editStudentNote test with mock" />
     <MESSAGE value="Student editStudentNote test with exception" />
@@ -482,7 +489,8 @@
     <MESSAGE value="SchoolSubject getter/setter implementation" />
     <MESSAGE value="SchoolSystem addStudent test" />
     <MESSAGE value="SchoolSystem addStudent test with exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem addStudent test with exception" />
+    <MESSAGE value="SchoolSystem addStudent method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem addStudent method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -501,10 +509,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586004064202">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586004388534">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586004064202" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586004388534" />
     <state width="1390" height="323" key="GridCell.Tab.0.bottom" timestamp="1586004364434">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

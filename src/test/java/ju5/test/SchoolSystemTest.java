@@ -1,5 +1,6 @@
 package ju5.test;
 
+import SchoolSystem.Grade;
 import SchoolSystem.MySchoolSystem;
 import SchoolSystem.Student;
 import org.junit.jupiter.api.Assertions;
@@ -8,7 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class SchoolSystemTest {
 
@@ -51,6 +52,47 @@ public class SchoolSystemTest {
 
 
     }
+
+    @Test
+    @DisplayName("Editing full student variables from MySchoolSystem class")
+    public void editStudent1(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+
+        doNothing().when(testStudent).changeName("Oskar");
+        doNothing().when(testStudent).changePername("Rak");
+        doNothing().when(testStudent).changeIndex("111111");
+
+
+
+
+        ss.editStudent(testStudent, "111111","Oskar", "Rak");
+
+        verify(testStudent).changeName("Oskar");
+        verify(testStudent).changePername("Rak");
+        verify(testStudent).changeIndex("111111");
+
+
+
+    }
+    @Test
+    @DisplayName("Editing throws exception when changed index already exists")
+    public void editStudentThrowsException(){
+
+        Student testStudent1 = Mockito.mock(Student.class);
+        Student testStudent2 = Mockito.mock(Student.class);
+
+        ss.addStudent(testStudent1);
+        when(testStudent1.getIndex()).thenReturn("111111");
+        ss.addStudent(testStudent2);
+        when(testStudent1.getIndex()).thenReturn("111112");
+
+            Assertions.assertThrows(IllegalArgumentException.class,
+                    () -> ss.editStudent(testStudent2, "111111", "Jan", "Janusz"));
+
+
+    }
+
 
 
 
