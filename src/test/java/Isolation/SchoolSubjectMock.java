@@ -12,48 +12,16 @@ import java.util.List;
 public class SchoolSubjectMock implements ISchoolSubject {
 
     SchoolSubjectEnum subject;
-    public HashMap<Student, ArrayList<Grade>> students;
+
 
     public SchoolSubjectMock(SchoolSubjectEnum subject){
 
         this.subject = subject;
-        this.students  = new HashMap<Student, ArrayList<Grade>>(0);;
-
-
-    }
-
-    @Override
-    public Student getStudentByIndex(String index) {
-        return null;
-    }
-
-    @Override
-    public void addStudent(Student student) {
-
-        this.students.put(student, new ArrayList<Grade>(0));
-
-
-    }
-
-    @Override
-    public void removeStudent(Student student) {
-
-
-        this.students.remove(student);
 
 
 
     }
 
-    @Override
-    public void updateStudent(Student student, String index, String name, String pername) {
-
-    }
-
-    @Override
-    public void editGrade(Student student, int gradeIndex, float correctedGrade) {
-
-    }
 
     @Override
     public String getName() {
