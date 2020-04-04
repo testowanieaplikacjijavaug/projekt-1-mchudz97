@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Isolation/SchoolSubjectMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Isolation/SchoolSubjectMock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -323,12 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585985306292</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Student removeSubject added">
+      <created>1585989143442</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1585989143442</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="current grade method test" />
     <MESSAGE value=".travis.yml added" />
     <MESSAGE value="codecov token added" />
     <MESSAGE value="README.md with badges added" />
@@ -353,7 +357,8 @@
     <MESSAGE value="Student editSubject test" />
     <MESSAGE value="Student editSubject method added" />
     <MESSAGE value="Student removeSubjectTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student removeSubjectTest" />
+    <MESSAGE value="Student removeSubject added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student removeSubject added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -372,10 +377,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585988938879">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585989142032">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585988938879" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585989142032" />
     <state width="1391" height="398" key="GridCell.Tab.0.bottom" timestamp="1585984352033">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

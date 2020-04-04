@@ -56,7 +56,6 @@ public class Student {
             if(subject == iss){
 
                 this.removeSubject(iss);
-                iss.removeStudent(this);
                 return;
 
             }

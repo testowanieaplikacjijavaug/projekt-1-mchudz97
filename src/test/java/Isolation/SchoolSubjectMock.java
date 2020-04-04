@@ -38,8 +38,10 @@ public class SchoolSubjectMock implements ISchoolSubject {
     @Override
     public void removeStudent(Student student) {
 
+
         this.students.remove(student);
-        student.
+
+
 
     }
 
