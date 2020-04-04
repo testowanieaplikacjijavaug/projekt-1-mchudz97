@@ -156,7 +156,7 @@ public class StudentTest {
         Student st = new Student("Adam", "Beks", "111111");
         NoteMock nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
         st.addStudentNote(nm);
-        st.editStudentNote(0, "jednak byl grzeczny!");
+        st.editStudentNote(nm, "jednak byl grzeczny!");
 
         Assertions.assertEquals("jednak byl grzeczny! 11-10-2010", st.notes.get(0).readNote());
 
@@ -165,12 +165,13 @@ public class StudentTest {
     }
     @Test
     @DisplayName("SchoolSystem.Student editStudentNoteMethod throws exception")
-    public void studentEditNoteThrowsExceptionTest() {
+    public void studentEditNoteThrowsExceptionTest() throws ParseException {
 
 
         Student st = new Student("Adam", "Beks", "111111");
+        INote nm = new NoteMock("byl niegrzeczny!", "11-10-2010");
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> st.editStudentNote(0, "jednak byl grzeczny!"));
+                () -> st.editStudentNote(nm, "jednak byl grzeczny!"));
 
     }
 

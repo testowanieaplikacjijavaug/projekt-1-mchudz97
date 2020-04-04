@@ -133,13 +133,13 @@ public class Student {
 
     }
 
-    public void editStudentNote(int noteIndex, String description){
+    public void editStudentNote(INote note, String description){
 
-        if(noteIndex < 0 || noteIndex >= this.notes.size()){
+        if(!this.notes.contains(note)){
             throw new IllegalArgumentException("Wrong note index!");
         }
 
-        this.notes.get(noteIndex).editNote(description);
+        note.editNote(description);
 
 
     }

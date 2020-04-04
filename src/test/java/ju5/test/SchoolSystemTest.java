@@ -322,5 +322,36 @@ public class SchoolSystemTest {
 
     }
 
+    @Test
+    @DisplayName("Adding note to not existing student")
+    public void editStudentsNoteEx() throws ParseException {
+
+
+        Student testStudent = Mockito.mock(Student.class);
+        INote noteMock = new NoteMock("hello", "11-10-2010");
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.editStudentsNote(testStudent, noteMock, "edit"));
+
+
+
+
+    }
+
+    @Test
+    @DisplayName("Adding note to existing in system student")
+    public void editStudentsNote() throws ParseException {
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        INote noteMock = new NoteMock("hello", "11-10-2010");
+        ss.addStudent(testStudent);
+        ss.addNoteToStudent(testStudent, noteMock);
+        doNothing().when(testStudent).editStudentNote(noteMock, "edit");
+        ss.editStudentsNote(testStudent, noteMock, "edit");
+
+        verify(testStudent).editStudentNote(noteMock, "edit");
+
+    }
+
 
 }
