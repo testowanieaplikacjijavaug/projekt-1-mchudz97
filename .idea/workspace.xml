@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,27 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Student editSubject test">
-      <created>1585984378314</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1585984378314</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Student editSubject method added">
-      <created>1585984456274</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1585984456274</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Student removeSubjectTest">
-      <created>1585985306292</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1585985306292</updated>
     </task>
     <task id="LOCAL-00034" summary="Student removeSubject added">
       <created>1585989143442</created>
@@ -487,14 +465,32 @@
       <option name="project" value="LOCAL" />
       <updated>1586025579751</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Note of  method refactor">
+      <created>1586025684025</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025684025</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Note readNote method test">
+      <created>1586025807990</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025807990</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Note readNote method added">
+      <created>1586025872862</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025872862</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem addSubjectToStudent method added" />
-    <MESSAGE value="SchoolSystem editStudentsSubject tests" />
-    <MESSAGE value="SchoolSystem editStudentsSubject method added" />
     <MESSAGE value="SchoolSystem removeStudentsSubject method tests" />
     <MESSAGE value="SchoolSystem removeStudentsSubject method added" />
     <MESSAGE value="SchoolSystem addGradeToStudent method tests" />
@@ -517,7 +513,10 @@
     <MESSAGE value="MySchoolSystem avgOfAllStudentSubjects method added" />
     <MESSAGE value="Note of  method tests" />
     <MESSAGE value="Note of  method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Note of  method added" />
+    <MESSAGE value="Note of  method refactor" />
+    <MESSAGE value="Note readNote method test" />
+    <MESSAGE value="Note readNote method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Note readNote method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -536,10 +535,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586025807219">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586025872148">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586025807219" />
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586025872148" />
     <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586025687649">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

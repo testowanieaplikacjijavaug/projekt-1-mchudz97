@@ -34,6 +34,35 @@ public class NoteTest {
         Assertions.assertEquals("Hi", Note.of("Hi").readNote());
 
     }
+    @Test
+    @DisplayName("Note editNote method when blank value")
+    public void editNoteTestEx1(){
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> Note.of("A").editNote(""));
+
+    }
+
+    @Test
+    @DisplayName("Note editNote method when null value")
+    public void editNoteTestEx2(){
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> Note.of("A").editNote(null));
+
+    }
+
+    @Test
+    @DisplayName("Note editNote method when valid value")
+    public void editNoteTest(){
+
+        String test = "Nowa wartosc";
+        Note n = Note.of("A");
+        n.editNote(test);
+
+        Assertions.assertEquals(test, n.readNote());
+
+    }
 
 
 }
