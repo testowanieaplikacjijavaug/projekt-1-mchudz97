@@ -81,11 +81,12 @@ public class SchoolSystemTest {
 
         Student testStudent1 = Mockito.mock(Student.class);
         Student testStudent2 = Mockito.mock(Student.class);
-
-        ss.addStudent(testStudent1);
         when(testStudent1.getIndex()).thenReturn("111111");
+        when(testStudent2.getIndex()).thenReturn("111112");
+        ss.addStudent(testStudent1);
+
         ss.addStudent(testStudent2);
-        when(testStudent1.getIndex()).thenReturn("111112");
+
 
             Assertions.assertThrows(IllegalArgumentException.class,
                     () -> ss.editStudent(testStudent2, "111111", "Jan", "Janusz"));

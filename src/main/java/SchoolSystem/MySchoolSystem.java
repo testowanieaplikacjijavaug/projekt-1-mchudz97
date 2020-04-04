@@ -28,6 +28,20 @@ public class MySchoolSystem {
 
     }
 
+    public void editStudent(Student student, String index, String name, String pername){
+
+        if(this.duplicateFinder(index)){
+
+            throw new IllegalArgumentException("student with that index already exists!");
+
+        }
+
+        student.changeIndex(index);
+        student.changeName(name);
+        student.changePername(pername);
+
+    }
+
 
     private boolean duplicateFinder(String index){
 
