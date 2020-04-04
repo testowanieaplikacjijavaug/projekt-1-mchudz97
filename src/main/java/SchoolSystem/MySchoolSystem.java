@@ -16,6 +16,8 @@ public class MySchoolSystem {
 
     }
 
+    public float
+
     public void editStudentsNote(Student st, INote note, String description){
 
         if(!this.students.contains(st)){

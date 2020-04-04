@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,13 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Student editStudentNote method added">
-      <created>1585946594724</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1585946594724</updated>
     </task>
     <task id="LOCAL-00026" summary="date format edited (timezone problem)">
       <created>1585947347999</created>
@@ -487,12 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586022194496</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="MySchoolSystem avgOfStudentSubject method tests">
+      <created>1586023724050</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1586023724050</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem editStudent method added" />
     <MESSAGE value="SchoolSystem removeStudent test" />
     <MESSAGE value="SchoolSystem removeStudent method added" />
     <MESSAGE value="SchoolSystem addSubjectToStudent test" />
@@ -517,7 +517,8 @@
     <MESSAGE value="Student averageGradeOf method added + test refactor" />
     <MESSAGE value="Student averageGradeOfAll method test" />
     <MESSAGE value="Student averageGradeOfAll method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student averageGradeOfAll method added" />
+    <MESSAGE value="MySchoolSystem avgOfStudentSubject method tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="MySchoolSystem avgOfStudentSubject method tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -536,10 +537,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="576" y="67" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586022193344">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586023723196">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="576" y="67" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586022193344" />
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586023723196" />
     <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586022173304">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

@@ -363,7 +363,7 @@ public class SchoolSystemTest {
 
 
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> ss.avgOfStudentSubject(iss));
+                () -> ss.avgOfStudentSubject(testStudent, iss));
 
 
     }
@@ -375,10 +375,9 @@ public class SchoolSystemTest {
         Student testStudent = Mockito.spy(Mockito.mock(Student.class));
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Chemia);
         ss.addStudent(testStudent);
-        doNothing().when(testStudent).averageGradeOf(iss);
+        doReturn(4.5f).when(testStudent).averageGradeOf(iss);
 
-        ss.avgOfStudentSubject(iss);
-        verify(testStudent).averageGradeOf(iss);
+        Assertions.assertEquals(4.5f, ss.avgOfStudentSubject(testStudent, iss));
 
     }
 
