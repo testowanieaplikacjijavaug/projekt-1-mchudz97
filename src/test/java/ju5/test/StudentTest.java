@@ -390,6 +390,37 @@ public class StudentTest {
 
     }
 
+    @Test
+    @DisplayName("Average student grade of not existing subject")
+    public void studentAverageGradeOfEx(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.averageGradeOf(ssm));
+
+
+    }
+
+    @Test
+    @DisplayName("Average student grade of existing subject")
+    public void studentAverageGradeOf(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        st.addSubject(ssm);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+        Grade testGrade2 = Mockito.mock(Grade.class);
+        when(testGrade1.getCurrentGrade()).thenReturn(4.5f);
+        when(testGrade2.getCurrentGrade()).thenReturn(3.5f);
+        st.addGrade(ssm, testGrade1);
+        st.addGrade(ssm, testGrade1);
+
+        Assertions.assertEquals(4.0f, st.averageGradeOf(ssm));
+
+    }
 
 
 

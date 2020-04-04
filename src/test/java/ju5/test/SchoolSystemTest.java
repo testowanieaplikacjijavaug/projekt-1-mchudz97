@@ -323,7 +323,7 @@ public class SchoolSystemTest {
     }
 
     @Test
-    @DisplayName("Adding note to not existing student")
+    @DisplayName("Editing note of not existing student")
     public void editStudentsNoteEx() throws ParseException {
 
 
@@ -339,7 +339,7 @@ public class SchoolSystemTest {
     }
 
     @Test
-    @DisplayName("Adding note to existing in system student")
+    @DisplayName("Editing note of existing in system student")
     public void editStudentsNote() throws ParseException {
 
         Student testStudent = Mockito.spy(Mockito.mock(Student.class));
@@ -352,6 +352,8 @@ public class SchoolSystemTest {
         verify(testStudent).editStudentNote(noteMock, "edit");
 
     }
+
+
 
 
 }
