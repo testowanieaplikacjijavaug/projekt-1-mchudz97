@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,20 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00002" summary="of method added">
-      <created>1585908300730</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1585908300730</updated>
-    </task>
-    <task id="LOCAL-00003" summary="of method added">
-      <created>1585915578733</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1585915578733</updated>
     </task>
     <task id="LOCAL-00004" summary="grade val getter test">
       <created>1585916053381</created>
@@ -465,13 +452,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586007986808</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="SchoolSystem removeStudent test">
+      <created>1586008252026</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586008252026</updated>
+    </task>
+    <task id="LOCAL-00052" summary="SchoolSystem removeStudent method added">
+      <created>1586008354786</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1586008354786</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Student editStudentNote test with exception" />
-    <MESSAGE value="Student editStudentNote method added" />
     <MESSAGE value="date format edited (timezone problem)" />
     <MESSAGE value="Student addSubject test" />
     <MESSAGE value="Student addSubject test repair" />
@@ -495,7 +494,9 @@
     <MESSAGE value="SchoolSystem addStudent method added" />
     <MESSAGE value="SchoolSystem editStudent tests" />
     <MESSAGE value="SchoolSystem editStudent method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem editStudent method added" />
+    <MESSAGE value="SchoolSystem removeStudent test" />
+    <MESSAGE value="SchoolSystem removeStudent method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem removeStudent method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -514,26 +515,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586008251195">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586008353946">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586008251195" />
-    <state width="1390" height="323" key="GridCell.Tab.0.bottom" timestamp="1586007960573">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586008353946" />
+    <state width="1390" height="323" key="GridCell.Tab.0.bottom" timestamp="1586008358608">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1390" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586007960573" />
-    <state width="1390" height="323" key="GridCell.Tab.0.center" timestamp="1586007960573">
+    <state width="1390" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586008358608" />
+    <state width="1390" height="323" key="GridCell.Tab.0.center" timestamp="1586008358607">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1390" height="323" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586007960573" />
-    <state width="1390" height="323" key="GridCell.Tab.0.left" timestamp="1586007960573">
+    <state width="1390" height="323" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586008358607" />
+    <state width="1390" height="323" key="GridCell.Tab.0.left" timestamp="1586008358607">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1390" height="323" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586007960573" />
-    <state width="1390" height="323" key="GridCell.Tab.0.right" timestamp="1586007960573">
+    <state width="1390" height="323" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586008358607" />
+    <state width="1390" height="323" key="GridCell.Tab.0.right" timestamp="1586008358607">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1390" height="323" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586007960573" />
+    <state width="1390" height="323" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586008358607" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

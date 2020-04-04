@@ -1,8 +1,7 @@
 package ju5.test;
 
-import SchoolSystem.Grade;
-import SchoolSystem.MySchoolSystem;
-import SchoolSystem.Student;
+import Isolation.SchoolSubjectMock;
+import SchoolSystem.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -114,6 +113,22 @@ public class SchoolSystemTest {
         ss.addStudent(testStudent1);
         ss.removeStudent(testStudent1);
         Assertions.assertFalse(ss.students.contains(testStudent1));
+
+    }
+
+    @Test
+    @DisplayName("Adding subject to student")
+    public void addSubjectToStudentTest(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+
+        doNothing().when(testStudent).addSubject(iss);
+
+        ss.addSubjectToStudentTest(testStudent, iss);
+
+        verify(testStudent).addSubject(iss);
 
     }
 
