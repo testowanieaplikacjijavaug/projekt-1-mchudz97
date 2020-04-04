@@ -29,6 +29,8 @@ public class Student {
 
     }
 
+
+
     public void editSubject(ISchoolSubject subject, SchoolSubjectEnum name){
 
         for (ISchoolSubject iss: this.subjects.keySet()

@@ -251,11 +251,25 @@ public class StudentTest {
     }
 
 
-
-
     @Test
     @DisplayName("SchoolSystem.Student addGrade method test if no subject")
     public void studentAddGradeIfNoSub(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.addGrade(ssm, testGrade1));
+
+
+
+    }
+
+
+    @Test
+    @DisplayName("SchoolSystem.Student addGrade method test")
+    public void studentAddGrade(){
 
         Student st = new Student("Adam", "Beks", "111111");
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
