@@ -29,6 +29,26 @@ public class Student {
 
     }
 
+    public void removeGrade(ISchoolSubject subject, Grade grade){
+
+        if(!this.subjects.containsKey(subject)){
+
+            throw new IllegalArgumentException("invalid subject!");
+
+        }
+
+
+        if(!this.subjects.get(subject).contains(grade)){
+
+            throw new IllegalArgumentException("invalid index number!");
+
+        }
+
+        this.subjects.get(subject).remove(grade);
+
+
+    }
+
 
     public void editGrade(ISchoolSubject subject, Grade grade, float val){
 
