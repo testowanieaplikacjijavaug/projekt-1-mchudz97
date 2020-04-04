@@ -426,6 +426,44 @@ public class StudentTest {
         Assertions.assertEquals(result, st.averageGradeOf(ssm));
 
     }
+    @Test
+    @DisplayName("Average student grade of all subjects")
+    public void studentAverageGradeOfAll(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        ISchoolSubject  ssm2 = new SchoolSubjectMock(SchoolSubjectEnum.Wychowanie_fizyczne);
+        ISchoolSubject  ssm3 = new SchoolSubjectMock(SchoolSubjectEnum.Chemia);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+        Grade testGrade2 = Mockito.mock(Grade.class);
+        Grade testGrade3 = Mockito.mock(Grade.class);
+        Grade testGrade4 = Mockito.mock(Grade.class);
+        Grade testGrade5 = Mockito.mock(Grade.class);
+        Grade testGrade6 = Mockito.mock(Grade.class);
+        when(testGrade1.getCurrentGrade()).thenReturn(2.0f);
+        when(testGrade2.getCurrentGrade()).thenReturn(2.0f);
+        when(testGrade3.getCurrentGrade()).thenReturn(3.0f);
+        when(testGrade4.getCurrentGrade()).thenReturn(3.0f);
+        when(testGrade5.getCurrentGrade()).thenReturn(4.0f);
+        when(testGrade6.getCurrentGrade()).thenReturn(4.0f);
+
+
+        st.addSubject(ssm);
+        st.addSubject(ssm2);
+        st.addSubject(ssm3);
+        st.addGrade(ssm, testGrade1);
+        st.addGrade(ssm, testGrade2);
+        st.addGrade(ssm2, testGrade3);
+        st.addGrade(ssm2, testGrade4);
+        st.addGrade(ssm3, testGrade5);
+        st.addGrade(ssm3, testGrade6);
+
+
+        Assertions.assertEquals(3.0f, st.averageGradeOfAll());
+
+
+    }
+
 
 
 
