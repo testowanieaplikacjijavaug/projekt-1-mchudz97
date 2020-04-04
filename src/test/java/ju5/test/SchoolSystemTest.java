@@ -170,5 +170,33 @@ public class SchoolSystemTest {
 
     }
 
+    @Test
+    @DisplayName("Removing subject of not existing in system student will cause exception")
+    public void removeStudentsSubjectEx(){
+
+        Student testStudent = Mockito.mock(Student.class);
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.removeStudentsSubject(testStudent, iss));
+
+
+    }
+
+    @Test
+    @DisplayName("Removing subject of existing in system student")
+    public void removeStudentsSubject(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        doNothing().when(testStudent).removeSubject(iss);
+        ss.addStudent(testStudent);
+        ss.addSubjectToStudent(testStudent, iss);
+        ss.removeStudentsSubject(testStudent, iss);
+
+        verify(testStudent).removeSubject(iss);
+
+    }
+
 
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="SchoolSystem addSubjectToStudent method added">
+    <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="SchoolSystem editStudentsSubject method added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
     </list>
@@ -38,6 +38,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="JUnit.SchoolSystemTest">
     <configuration name="GradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -122,20 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00007" summary="current grade method test">
-      <created>1585918978927</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1585918978927</updated>
-    </task>
-    <task id="LOCAL-00008" summary=".travis.yml added">
-      <created>1585921922980</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1585921922980</updated>
     </task>
     <task id="LOCAL-00009" summary="codecov token added">
       <created>1585922060020</created>
@@ -466,13 +453,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586010041995</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="SchoolSystem editStudentsSubject tests">
+      <created>1586013170562</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013170562</updated>
+    </task>
+    <task id="LOCAL-00057" summary="SchoolSystem editStudentsSubject method added">
+      <created>1586013342971</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1586013342971</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Student addSubject method + editSubject test" />
-    <MESSAGE value="Student editSubject test" />
     <MESSAGE value="Student editSubject method added" />
     <MESSAGE value="Student removeSubjectTest" />
     <MESSAGE value="Student removeSubject added" />
@@ -496,7 +495,9 @@
     <MESSAGE value="SchoolSystem addSubjectToStudent test" />
     <MESSAGE value="SchoolSystem addSubjectToStudent test edit + new test" />
     <MESSAGE value="SchoolSystem addSubjectToStudent method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem addSubjectToStudent method added" />
+    <MESSAGE value="SchoolSystem editStudentsSubject tests" />
+    <MESSAGE value="SchoolSystem editStudentsSubject method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="SchoolSystem editStudentsSubject method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -515,26 +516,26 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586013169820">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586013832875">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586013169820" />
-    <state width="1389" height="323" key="GridCell.Tab.0.bottom" timestamp="1586013316949">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586013832875" />
+    <state width="1389" height="323" key="GridCell.Tab.0.bottom" timestamp="1586013445650">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1389" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586013316949" />
-    <state width="1389" height="323" key="GridCell.Tab.0.center" timestamp="1586013316949">
+    <state width="1389" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1586013445650" />
+    <state width="1389" height="323" key="GridCell.Tab.0.center" timestamp="1586013445650">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1389" height="323" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586013316949" />
-    <state width="1389" height="323" key="GridCell.Tab.0.left" timestamp="1586013316949">
+    <state width="1389" height="323" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1586013445650" />
+    <state width="1389" height="323" key="GridCell.Tab.0.left" timestamp="1586013445650">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1389" height="323" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586013316949" />
-    <state width="1389" height="323" key="GridCell.Tab.0.right" timestamp="1586013316949">
+    <state width="1389" height="323" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1586013445650" />
+    <state width="1389" height="323" key="GridCell.Tab.0.right" timestamp="1586013445650">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1389" height="323" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586013316949" />
+    <state width="1389" height="323" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1586013445650" />
     <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1586008283150">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
