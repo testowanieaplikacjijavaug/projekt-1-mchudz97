@@ -136,12 +136,37 @@ public class SchoolSystemTest {
         Student testStudent = Mockito.spy(Mockito.mock(Student.class));
         ss.addStudent(testStudent);
         ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
-
         doNothing().when(testStudent).addSubject(iss);
-
         ss.addSubjectToStudent(testStudent, iss);
 
         verify(testStudent).addSubject(iss);
+
+    }
+
+    @Test
+    @DisplayName("Editing subject of not existing in system student will cause exception")
+    public void editStudentsSubjectEx(){
+
+        Student testStudent = Mockito.mock(Student.class);
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.editStudentsSubject(testStudent, iss, SchoolSubjectEnum.Wychowanie_fizyczne));
+
+
+    }
+    @Test
+    @DisplayName("Editing subject of existing in system student")
+    public void editStudentsSubject(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        doNothing().when(testStudent).editSubject(iss, SchoolSubjectEnum.Wychowanie_fizyczne);
+        ss.addStudent(testStudent);
+        ss.addSubjectToStudent(testStudent, iss);
+        ss.editStudentsSubject(testStudent, iss, SchoolSubjectEnum.Wychowanie_fizyczne);
+
+        verify(testStudent).editSubject(iss, SchoolSubjectEnum.Wychowanie_fizyczne);
 
     }
 
