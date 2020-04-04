@@ -354,6 +354,35 @@ public class SchoolSystemTest {
     }
 
 
+    @Test
+    @DisplayName("Average grade of subject from non existing student will throw exception")
+    public void avgOfStudentSubjectEx(){
+
+        Student testStudent = Mockito.mock(Student.class);
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Chemia);
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.avgOfStudentSubject(iss));
+
+
+    }
+
+    @Test
+    @DisplayName("Average grade of subject from existing student ")
+    public void avgOfStudentSubject(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Chemia);
+        ss.addStudent(testStudent);
+        doNothing().when(testStudent).averageGradeOf(iss);
+
+        ss.avgOfStudentSubject(iss);
+        verify(testStudent).averageGradeOf(iss);
+
+    }
+
+
 
 
 }
