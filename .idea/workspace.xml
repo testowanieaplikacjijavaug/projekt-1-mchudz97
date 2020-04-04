@@ -372,12 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585995836711</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Student editGrade method added">
+      <created>1585997439160</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1585997439160</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Student rename tests" />
     <MESSAGE value="Student rename method added" />
     <MESSAGE value="Student refactored method name" />
     <MESSAGE value="Student changePername tests" />
@@ -402,7 +408,8 @@
     <MESSAGE value="Student addGrade exception test" />
     <MESSAGE value="Student addGrade method added" />
     <MESSAGE value="Student editGrade test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student editGrade test" />
+    <MESSAGE value="Student editGrade method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student editGrade method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -421,10 +428,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585995835856">
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1585998572854">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585995835856" />
+    <state x="523" y="33" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1585998572854" />
     <state width="1391" height="323" key="GridCell.Tab.0.bottom" timestamp="1585997421090">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>

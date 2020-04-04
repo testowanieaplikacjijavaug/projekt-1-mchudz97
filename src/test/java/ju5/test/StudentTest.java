@@ -286,10 +286,25 @@ public class StudentTest {
 
     }
 
+    @Test
+    @DisplayName("SchoolSystem.Student editGrade method when no subject in student test")
+    public void studentEditGradeWithException1(){
 
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.editGrade(ssm, testGrade1, 4.5f));
+
+
+
+    }
     @Test
     @DisplayName("SchoolSystem.Student editGrade method when student hasnt that grade test")
-    public void studentEditGradeWithException(){
+    public void studentEditGradeWithException2(){
 
         Student st = new Student("Adam", "Beks", "111111");
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
@@ -298,7 +313,7 @@ public class StudentTest {
 
 
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> st.editGrade(ssm, 0, 4.5f));
+                () -> st.editGrade(ssm, testGrade1, 4.5f));
 
 
 
@@ -321,11 +336,55 @@ public class StudentTest {
 
         st.addGrade(ssm, testGrade1);
 
-        st.editGrade(ssm, 0, 4.0f);
+        st.editGrade(ssm, testGrade1, 4.0f);
 
         verify(testGrade1).correctGradeTo(4.0f);
 
 
+
+
+    }
+
+    @Test
+    @DisplayName("SchoolSystem.Student removeGrade method when no subject ")
+    public void studentRemoveGradeWhenException1(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.removeGrade(ssm, testGrade1));
+
+
+    }
+
+    @Test
+    @DisplayName("SchoolSystem.Student removeGrade method when no grade ")
+    public void studentRemoveGradeWhenException2(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        st.addSubject(ssm);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.removeGrade(ssm, testGrade1));
+
+
+    }
+
+    @Test
+    @DisplayName("SchoolSystem.Student removeGrade method test")
+    public void studentRemoveGrade(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        st.addSubject(ssm);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+        st.addGrade(ssm, testGrade1);
+        st.removeGrade(ssm, testGrade1);
+        Assertions.assertFalse(st.subjects.get(ssm).contains(testGrade1));
 
 
     }

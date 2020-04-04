@@ -30,15 +30,22 @@ public class Student {
     }
 
 
-    public void editGrade(ISchoolSubject subject, int index, float val){
+    public void editGrade(ISchoolSubject subject, Grade grade, float val){
 
-        if(index >= subjects.get(subject).size() || index < 0){
+        if(!this.subjects.containsKey(subject)){
+
+            throw new IllegalArgumentException("invalid subject!");
+
+        }
+
+
+        if(!this.subjects.get(subject).contains(grade)){
 
             throw new IllegalArgumentException("invalid index number!");
 
         }
 
-        subjects.get(subject).get(index).correctGradeTo(val);
+        grade.correctGradeTo(val);
 
 
 
