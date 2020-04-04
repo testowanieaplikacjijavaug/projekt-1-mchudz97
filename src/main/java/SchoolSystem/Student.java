@@ -29,6 +29,23 @@ public class Student {
 
     }
 
+    public void editSubject(ISchoolSubject subject, SchoolSubjectEnum name){
+
+        for (ISchoolSubject iss: this.subjects.keySet()
+        ) {
+
+            if(subject == iss){
+
+                iss.setName(name);
+                return;
+
+            }
+
+        }
+
+        throw new IllegalArgumentException("subject not found!");
+
+    }
 
     public void addSubject(ISchoolSubject subject){
 
