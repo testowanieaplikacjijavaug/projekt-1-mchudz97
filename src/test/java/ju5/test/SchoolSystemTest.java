@@ -31,9 +31,7 @@ public class SchoolSystemTest {
 
         ss.addStudent(st);
 
-        Assertions.assertEquals(st, ss.students.get(st));
-
-
+        Assertions.assertTrue( ss.students.contains(st));
 
 
     }

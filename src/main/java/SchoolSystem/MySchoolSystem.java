@@ -18,7 +18,28 @@ public class MySchoolSystem {
 
     public void addStudent(Student st){
 
+        if(this.duplicateFinder(st.getIndex())){
 
+            throw new IllegalArgumentException("student with that index already exists!");
+
+        }
+
+        this.students.add(st);
+
+    }
+
+
+    private boolean duplicateFinder(String index){
+
+        for (Student s: students) {
+
+            if(s.getIndex() == index){
+                return true;
+            }
+
+        }
+
+        return false;
 
     }
 
