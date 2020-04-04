@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import static org.mockito.Mockito.*;
@@ -195,6 +196,36 @@ public class SchoolSystemTest {
         ss.removeStudentsSubject(testStudent, iss);
 
         verify(testStudent).removeSubject(iss);
+
+    }
+
+    @Test
+    @DisplayName("Adding grade to not existing in system student")
+    public void addGradeToStudentTestEx(){
+
+        Student testStudent = Mockito.mock(Student.class);
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade gmock = Mockito.mock(Grade.class);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.addGradeToStudent(testStudent, iss, gmock));
+
+
+
+    }
+
+    @Test
+    @DisplayName("Adding grade to existing in system student")
+    public void addGradeToStudentTest(){
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        ISchoolSubject iss = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Grade gmock = Mockito.mock(Grade.class);
+        ss.addStudent(testStudent);
+        doNothing().when(testStudent).addGrade(iss, gmock);
+        ss.addGradeToStudent(testStudent, iss, gmock);
+
+        verify(testStudent).addGrade(iss, gmock);
 
     }
 
