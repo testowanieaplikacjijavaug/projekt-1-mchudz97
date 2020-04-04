@@ -6,8 +6,11 @@ import SchoolSystem.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.mockito.Mockito;
 
 import java.text.ParseException;
+
+import static org.mockito.Mockito.when;
 
 public class StudentTest {
 
@@ -246,6 +249,29 @@ public class StudentTest {
 
 
     }
+
+
+
+
+    @Test
+    @DisplayName("SchoolSystem.Student addGrade method test if no subject")
+    public void studentAddGradeIfNoSub(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        st.addSubject(ssm);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+
+        st.addGrade(ssm, testGrade1);
+
+        Assertions.assertEquals(testGrade1, st.subjects.get(ssm).get(0));
+
+
+
+
+    }
+
 
 
 
