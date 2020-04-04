@@ -233,7 +233,7 @@ public class StudentTest {
 
     @Test
     @DisplayName("SchoolSystem.Student removeSubject method test ")
-    public void studentRemoveSubjectTest1(){
+    public void studentRemoveSubjectTest2(){
 
 
         ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);

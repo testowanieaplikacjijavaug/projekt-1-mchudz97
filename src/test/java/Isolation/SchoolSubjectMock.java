@@ -31,7 +31,7 @@ public class SchoolSubjectMock implements ISchoolSubject {
     public void addStudent(Student student) {
 
         this.students.put(student, new ArrayList<Grade>(0));
-        student.addSubject(this);
+
 
     }
 
