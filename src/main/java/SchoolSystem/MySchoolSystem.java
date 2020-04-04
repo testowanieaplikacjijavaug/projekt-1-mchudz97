@@ -16,6 +16,18 @@ public class MySchoolSystem {
 
     }
 
+    public void editStudentsNote(Student st, INote note, String description){
+
+        if(!this.students.contains(st)){
+
+            throw new IllegalArgumentException("that student doesnt exist in system");
+
+        }
+
+        st.editStudentNote(note, description);
+
+    }
+
     public void addNoteToStudent(Student st, INote note){
 
         if(!this.students.contains(st)){
