@@ -27,5 +27,13 @@ public class NoteTest {
 
     }
 
+    @Test
+    @DisplayName("Note readNote method test")
+    public void readNoteTest(){
+
+        Assertions.assertEquals("Hi", Note.of("Hi").readNote());
+
+    }
+
 
 }
