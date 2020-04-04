@@ -298,7 +298,7 @@ public class StudentTest {
 
 
         Assertions.assertThrows(IllegalArgumentException.class,
-                () -> st.editGrade(st.subjects.get(ssm).get(0), 4.5));
+                () -> st.editGrade(ssm, 0, 4.5f));
 
 
 
@@ -321,7 +321,7 @@ public class StudentTest {
 
         st.addGrade(ssm, testGrade1);
 
-        st.editGrade(testGrade1, 4.0f);
+        st.editGrade(ssm, 0, 4.0f);
 
         verify(testGrade1).correctGradeTo(4.0f);
 
