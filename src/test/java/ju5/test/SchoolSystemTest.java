@@ -94,6 +94,28 @@ public class SchoolSystemTest {
 
     }
 
+    @Test
+    @DisplayName("When we want to remove not existing student in system it throws exception")
+    public void removeStudentExceptionTest(){
+
+        Student testStudent1 = Mockito.mock(Student.class);
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.removeStudent(testStudent1));
+
+
+    }
+
+    @Test
+    @DisplayName("When student exists in system he will be removed")
+    public void removeStudentTest(){
+
+        Student testStudent1 = Mockito.mock(Student.class);
+        ss.addStudent(testStudent1);
+        ss.removeStudent(testStudent1);
+        Assertions.assertFalse(ss.students.contains(testStudent1));
+
+    }
 
 
 
