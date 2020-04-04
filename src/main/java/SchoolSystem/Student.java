@@ -29,6 +29,20 @@ public class Student {
 
     }
 
+    public float averageGradeOfAll(){
+
+        float avgAll = 0;
+
+        for (ISchoolSubject iss : this.subjects.keySet()) {
+
+            avgAll += this.averageGradeOf(iss);
+
+        }
+
+        return avgAll/this.subjects.keySet().size();
+
+    }
+
 
     public float averageGradeOf(ISchoolSubject subject){
 
