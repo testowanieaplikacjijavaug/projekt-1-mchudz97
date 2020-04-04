@@ -16,6 +16,19 @@ public class MySchoolSystem {
 
     }
 
+    public void removeStudent(Student student){
+
+        if(!this.students.contains(student)){
+
+            throw new IllegalArgumentException("that student doesn't exists in system!");
+
+        }
+
+        this.students.remove(student);
+
+    }
+
+
     public void addStudent(Student st){
 
         if(this.duplicateFinder(st.getIndex())){
