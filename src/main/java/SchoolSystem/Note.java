@@ -28,7 +28,13 @@ public class Note implements INote {
     @Override
     public void editNote(String description) {
 
+        if(description == null || description == ""){
 
+            throw new IllegalArgumentException("description got blank or null value!");
+
+        }
+
+        this.description = description;
 
     }
 }
