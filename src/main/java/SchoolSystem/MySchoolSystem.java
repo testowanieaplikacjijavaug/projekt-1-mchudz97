@@ -16,6 +16,18 @@ public class MySchoolSystem {
 
     }
 
+    public void removeStudentsSubject(Student st, ISchoolSubject subject){
+
+        if(!this.students.contains(st)){
+
+            throw new IllegalArgumentException("that student doesnt exist in system");
+
+        }
+
+        st.removeSubject(subject);
+
+    }
+
     public void editStudentsSubject(Student st, ISchoolSubject subject, SchoolSubjectEnum name){
 
         if(!this.students.contains(st)){
