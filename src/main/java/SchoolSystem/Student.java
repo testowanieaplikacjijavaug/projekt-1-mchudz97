@@ -30,8 +30,6 @@ public class Student {
     }
 
 
-
-
     public void addSubject(ISchoolSubject subject){
 
         this.subjects.put(subject, new ArrayList<Grade>(0));

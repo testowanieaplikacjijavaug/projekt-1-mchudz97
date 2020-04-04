@@ -193,7 +193,22 @@ public class StudentTest {
         st.addSubject(ssm);
         st.editSubject(ssm, SchoolSubjectEnum.Wychowanie_fizyczne);
 
-        Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne, ssm.getName());
+        Assertions.assertEquals(SchoolSubjectEnum.Wychowanie_fizyczne.name(), ssm.getName());
+
+
+
+    }
+
+    @Test
+    @DisplayName("SchoolSystem.Student editSubject method if subject not found test ")
+    public void studentEditSubjectTest2(){
+
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        Student st = new Student("Adam", "Beks", "111111");
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.editSubject(ssm, SchoolSubjectEnum.Wychowanie_fizyczne));
 
 
 
