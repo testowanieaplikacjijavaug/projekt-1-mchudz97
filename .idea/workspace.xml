@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db9fecf-6124-42f8-b9cd-74c23e7bb2ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ju5/test/NoteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/MySchoolSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ju5/test/SchoolSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SchoolSystem/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SchoolSystem/Note.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,20 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585904741159</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Student addSubject test">
-      <created>1585951789991</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1585951789991</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Student addSubject test repair">
-      <created>1585951950622</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1585951950622</updated>
     </task>
     <task id="LOCAL-00029" summary="Student addSubject method + editSubject test">
       <created>1585952979993</created>
@@ -488,13 +474,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586024320036</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="MySchoolSystem avgOfStudentSubject method added + avgOfAllStudentSubjects method tests">
+      <created>1586024744159</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024744159</updated>
+    </task>
+    <task id="LOCAL-00077" summary="MySchoolSystem avgOfAllStudentSubjects method added">
+      <created>1586024826102</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024826102</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SchoolSystem removeStudent test" />
-    <MESSAGE value="SchoolSystem removeStudent method added" />
     <MESSAGE value="SchoolSystem addSubjectToStudent test" />
     <MESSAGE value="SchoolSystem addSubjectToStudent test edit + new test" />
     <MESSAGE value="SchoolSystem addSubjectToStudent method added" />
@@ -518,7 +516,9 @@
     <MESSAGE value="Student averageGradeOfAll method test" />
     <MESSAGE value="Student averageGradeOfAll method added" />
     <MESSAGE value="MySchoolSystem avgOfStudentSubject method tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="MySchoolSystem avgOfStudentSubject method tests" />
+    <MESSAGE value="MySchoolSystem avgOfStudentSubject method added + avgOfAllStudentSubjects method tests" />
+    <MESSAGE value="MySchoolSystem avgOfAllStudentSubjects method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="MySchoolSystem avgOfAllStudentSubjects method added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="482" y="102" key="#GradeTest" timestamp="1585941264491">
@@ -537,10 +537,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="708" y="341" width="503" height="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1030@0.0.1920.1030" timestamp="1585908150172" />
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586024743264">
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2" timestamp="1586024825183">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586024743264" />
+    <state x="541" y="6" width="1187" height="963" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1586024825183" />
     <state width="1864" height="381" key="GridCell.Tab.0.bottom" timestamp="1586024795261">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
