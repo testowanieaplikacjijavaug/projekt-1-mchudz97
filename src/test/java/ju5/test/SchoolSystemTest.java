@@ -316,7 +316,7 @@ public class SchoolSystemTest {
         INote noteMock = new NoteMock("hello", "11-10-2010");
         ss.addStudent(testStudent);
         doNothing().when(testStudent).addStudentNote(noteMock);
-        ss.addNoteToStudent(testStudent, noteMock));
+        ss.addNoteToStudent(testStudent, noteMock);
 
         verify(testStudent).addStudentNote(noteMock);
 
