@@ -10,7 +10,7 @@ import org.mockito.Mockito;
 
 import java.text.ParseException;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class StudentTest {
 
@@ -280,6 +280,50 @@ public class StudentTest {
         st.addGrade(ssm, testGrade1);
 
         Assertions.assertEquals(testGrade1, st.subjects.get(ssm).get(0));
+
+
+
+
+    }
+
+
+    @Test
+    @DisplayName("SchoolSystem.Student editGrade method when student hasnt that grade test")
+    public void studentEditGradeWithException(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        st.addSubject(ssm);
+        Grade testGrade1 = Mockito.mock(Grade.class);
+
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> st.editGrade(st.subjects.get(ssm).get(0), 4.5));
+
+
+
+    }
+
+
+
+
+    @Test
+    @DisplayName("SchoolSystem.Student editGrade method test")
+    public void studentEditGrade(){
+
+        Student st = new Student("Adam", "Beks", "111111");
+        ISchoolSubject  ssm = new SchoolSubjectMock(SchoolSubjectEnum.Biologia);
+        st.addSubject(ssm);
+        Grade testGrade1 = Mockito.spy(Mockito.mock(Grade.class));
+
+        doNothing().when(testGrade1).correctGradeTo(4.5f);
+
+
+        st.addGrade(ssm, testGrade1);
+
+        st.editGrade(testGrade1, 4.0f);
+
+        verify(testGrade1).correctGradeTo(4.0f);
 
 
 
