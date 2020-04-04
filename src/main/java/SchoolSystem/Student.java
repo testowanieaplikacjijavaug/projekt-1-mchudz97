@@ -47,7 +47,28 @@ public class Student {
 
     }
 
+
+    public void removeSubject(ISchoolSubject subject){
+
+        for (ISchoolSubject iss: this.subjects.keySet()
+        ) {
+
+            if(subject == iss){
+
+                this.removeSubject(iss);
+                iss.removeStudent(this);
+                return;
+
+            }
+
+        }
+
+        throw new IllegalArgumentException("subject not found!");
+
+    }
+
     public void addSubject(ISchoolSubject subject){
+
 
         this.subjects.put(subject, new ArrayList<Grade>(0));
 
