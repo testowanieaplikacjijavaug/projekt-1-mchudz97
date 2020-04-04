@@ -1,5 +1,6 @@
 package ju5.test;
 
+import Isolation.NoteMock;
 import Isolation.SchoolSubjectMock;
 import SchoolSystem.*;
 import org.junit.jupiter.api.Assertions;
@@ -8,6 +9,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+
+import java.text.ParseException;
 
 import static org.mockito.Mockito.*;
 
@@ -286,6 +289,36 @@ public class SchoolSystemTest {
         ss.removeStudentsGrade(testStudent, iss, gmock);
 
         verify(testStudent).removeGrade(iss, gmock);
+
+    }
+
+    @Test
+    @DisplayName("Adding note to not existing student")
+    public void addNoteToStudentEx() throws ParseException {
+
+
+        Student testStudent = Mockito.mock(Student.class);
+        INote noteMock = new NoteMock("hello", "11-10-2010");
+
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> ss.addNoteToStudent(testStudent, noteMock));
+
+
+
+
+    }
+
+    @Test
+    @DisplayName("Adding note to existing in system student")
+    public void addNoteToStudent() throws ParseException {
+
+        Student testStudent = Mockito.spy(Mockito.mock(Student.class));
+        INote noteMock = new NoteMock("hello", "11-10-2010");
+        ss.addStudent(testStudent);
+        doNothing().when(testStudent).addStudentNote(noteMock);
+        ss.addNoteToStudent(testStudent, noteMock));
+
+        verify(testStudent).addStudentNote(noteMock);
 
     }
 
