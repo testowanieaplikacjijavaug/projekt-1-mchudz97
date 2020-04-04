@@ -6,9 +6,9 @@ public class Note implements INote {
 
     public static Note of(String desc){
 
-        if(desc == null && desc == ""){
+        if(desc == null || desc == ""){
 
-            throw new IllegalArgumentException("fescription got blank or null value!");
+            throw new IllegalArgumentException("description got blank or null value!");
 
         }
 
